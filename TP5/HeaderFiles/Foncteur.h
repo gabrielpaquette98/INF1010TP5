@@ -59,7 +59,7 @@ public:
 		borneInf_ = borneInf;
 		borneSup_ = borneSup;
 	};
-	bool operator()(pair<int, Produit*> p) { return (p.second->obtenirPrix() > borneInf_) && (p.second->obtenirPrix() < borneSup_); };
+	bool operator()(pair<int, Produit*> p) { return (p.second->obtenirPrix() >= borneInf_) && (p.second->obtenirPrix() <= borneSup_); };
 private:
 	double borneInf_;
 	double borneSup_;
