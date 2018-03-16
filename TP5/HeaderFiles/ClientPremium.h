@@ -14,7 +14,7 @@ class ClientPremium : public Client
 
     unsigned int obtenirJoursRestants() const;
     virtual double obtenirTotalAPayer() const;
-    virtual void afficherProfil() const;
+    virtual void afficher() const;
 
     void modifierJoursRestants(unsigned int joursRestants);
 
