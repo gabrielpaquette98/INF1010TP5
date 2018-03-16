@@ -1,7 +1,7 @@
 /********************************************
 * Titre: Travail pratique #5 - Foncteur.h
 * Date: 9 mars 2018
-* Auteur: Ryan Hardie
+* Auteur: Ryan Hardie - 1894061 & 1899088
 *******************************************/
 
 #pragma once
@@ -39,7 +39,7 @@ class FoncteurDiminuerPourcent
 {
 public:
 	FoncteurDiminuerPourcent(int pourcentage) { pourcentage_ = pourcentage; };
-	void operator()(pair<int, Produit*> p) { p.second->modifierPrix(p.second->obtenirPrix * ((100 - pourcentage_)/100.0)); };
+	void operator()(pair<int, Produit*> p) { p.second->modifierPrix(p.second->obtenirPrix * ((100 - pourcentage_) / 100.0)); };
 private:
 	int pourcentage_;
 };
@@ -54,11 +54,15 @@ Méthodes :
 class FoncteurIntervalle
 {
 public:
-	FoncteurIntervalle() {};
-	operator()() {};
+	FoncteurIntervalle(double borneInf, double borneSup)
+	{
+		borneInf_ = borneInf;
+		borneSup_ = borneSup;
+	};
+	bool operator()(pair<int, Produit*> p) { return (p.second->obtenirPrix() > borneInf_) && (p.second->obtenirPrix() < borneSup_); };
 private:
-	borneInf_;
-	borneSup_;
+	double borneInf_;
+	double borneSup_;
 };
 /*
 Attributs :
