@@ -19,6 +19,14 @@ private:
 
 
 // TODO : Créer le FoncteurGenerateurId
+class FoncteurGenerateurId
+{
+public:
+	FoncteurGenerateurId() { id_ = 0; };
+	int operator()() { return id_++; };
+private:
+	int id_;
+};
 /*
 Attributs :
 - id_;
@@ -27,6 +35,14 @@ Méthodes :
 */
 
 // TODO : Créer le FoncteurDiminuerPourcent
+class FoncteurDiminuerPourcent
+{
+public:
+	FoncteurDiminuerPourcent(int pourcentage) { pourcentage_ = pourcentage; };
+	void operator()(pair<int, Produit*> p) { p.second->modifierPrix(p.second->obtenirPrix * ((100 - pourcentage_)/100.0)); };
+private:
+	int pourcentage_;
+};
 /*
 Attributs :
 - pourcentage_;
@@ -35,6 +51,15 @@ Méthodes :
 */
 
 // TODO : Créer le FoncteurIntervalle
+class FoncteurIntervalle
+{
+public:
+	FoncteurIntervalle() {};
+	operator()() {};
+private:
+	borneInf_;
+	borneSup_;
+};
 /*
 Attributs :
 - borneInf_;
