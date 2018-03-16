@@ -8,6 +8,20 @@
 
 // TODO : Créer la classe GestionnaireGenerique
 
+template<typename T, typename C> //T: donnees (produit ou usager); C: conteneur (multimap, set, etc)
+class GestionnaireGenerique
+{
+public:
+	void ajouter();
+	void supprime();
+	C obtenirConteneur();
+	pourChaqueElement()
+protected:
+	C conteneur_;
+};
+
+//attribut protected: conteneur_ 
+
 // TODO : Méthodes :
 /*
 - ajouter()

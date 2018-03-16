@@ -7,6 +7,16 @@
 #pragma once
 
 // TODO : Créer le FoncteurEgal
+template<typename T>
+class FoncteurEgal
+{
+public:
+	FoncteurEgal(T* t) { t_ = t; };
+	bool operator()(pair<int, T*> p) { return p.second == t_ };
+private:
+	T* t_;
+};
+
 
 // TODO : Créer le FoncteurGenerateurId
 /*
