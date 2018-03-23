@@ -4,6 +4,9 @@
 * Auteur: Ryan Hardie
 *******************************************/
 
+#ifndef GESTIONNAIREPRODUITS_H
+#define GESTIONNAIREPRODUITS_H
+
 #pragma once
 
 #include "GestionnaireGenerique.h"
@@ -21,3 +24,5 @@
 - obtenirProduitsEntre();
 - obtenirProduitSuivant();
 */
+
+#endif // !GESTIONNAIREPRODUITS_H

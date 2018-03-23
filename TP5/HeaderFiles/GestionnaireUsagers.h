@@ -1,8 +1,11 @@
 /********************************************
-* Titre: Travail pratique #5 - GestionnaireUsagers.h
+* Titre: Travail pratique #5 - GestionnaireGenerique.h
 * Date: 9 mars 2018
-* Auteur: Ryan Hardie
+* Auteurs: Ryan Hardie, 1899088 et 1894061
 *******************************************/
+
+#ifndef GESTIONNAIREUSAGER_H
+#define GESTIONNAIREUSAGER_H
 
 #pragma once
 
@@ -18,3 +21,5 @@ Les méthodes retrouvées de la classe Gestionnaire sont :
 - void reinitialiser();
 - void afficherProfils() const;
 */
+
+#endif // !GESTIONNAIREUSAGER_H
