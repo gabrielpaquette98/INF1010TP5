@@ -104,6 +104,7 @@ public:
 		multimap<int, Produit*>::iterator produitTrouve = find_if(multimap_.begin(), multimap_.end(), pointeurProduit);
 		if (produitTrouve != multimap_.end())
 			multimap_.erase(produitTrouve);
+		return multimap_;
 	};
 private:
 	multimap<int, Produit*> & multimap_;
