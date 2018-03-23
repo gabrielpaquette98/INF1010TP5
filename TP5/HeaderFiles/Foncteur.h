@@ -22,7 +22,6 @@ private:
 	T* t_;
 };
 
-
 // TODO : Créer le FoncteurGenerateurId
 class FoncteurGenerateurId
 {
@@ -32,12 +31,6 @@ public:
 private:
 	int id_;
 };
-/*
-Attributs :
-- id_;
-Méthodes :
-- operator(); Incrémenter id_ à chaque appel
-*/
 
 // TODO : Créer le FoncteurDiminuerPourcent
 class FoncteurDiminuerPourcent
@@ -48,12 +41,6 @@ public:
 private:
 	int pourcentage_;
 };
-/*
-Attributs :
-- pourcentage_;
-Méthodes :
-- operator(); Calule le nouveau prix du Produit de la pair passé en paramètre et le modifie
-*/
 
 // TODO : Créer le FoncteurIntervalle
 class FoncteurIntervalle
@@ -69,13 +56,6 @@ private:
 	double borneInf_;
 	double borneSup_;
 };
-/*
-Attributs :
-- borneInf_;
-- borneSup_;
-Méthodes :
-- operator(); Vérifie que le Produit associé à la pair passé en paramètre est compris entre les bornes borneInf_ et borneSup_ (retourne un booléen)
-*/
 
 // TODO : Créer le Foncteur AjouterProduit
 class AjouterProduit
@@ -86,12 +66,6 @@ public:
 private:
 	multimap<int, Produit*> & multimap_;
 };
-/*
-Attributs :
-- &multimap_;
-Méthodes :
-- operator(); Ajoute dans la multimap la pair passé par paramètre et retourne la multimap_;
-*/
 
 // TODO : Créer le Foncteur SupprimerProduit
 class SupprimerProduit
@@ -100,27 +74,39 @@ public:
 	SupprimerProduit(multimap<int, Produit*> & m) : multimap_(m) {	};
 	multimap<int, Produit*> & operator()(const pair<int, Produit*> &p) 
 	{ 
-		FoncteurEgal<Produit> pointeurProduit(p.second); 
-		multimap<int, Produit*>::iterator produitTrouve = find_if(multimap_.begin(), multimap_.end(), pointeurProduit);
-		if (produitTrouve != multimap_.end())
-			multimap_.erase(produitTrouve);
+		FoncteurEgal<Produit> foncteurProduitEgal(p.second); 
+		multimap<int, Produit*>::iterator itProduitTrouve = find_if(multimap_.begin(), multimap_.end(), foncteurProduitEgal);
+		if (itProduitTrouve != multimap_.end())
+			multimap_.erase(itProduitTrouve);
+		return multimap_;
 	};
 private:
 	multimap<int, Produit*> & multimap_;
 };
-/*
-Attributs :
-- &multimap_;
-Méthodes :
-- operator(); Utilise la fonction find_if avec le FoncteurEgal. Si le Produit existe,
-				on supprime le Produit et on retourne la multimap_,
-				sinon on retourne juste la multimap_ sans supprimer l'élément.
-*/
 
 //TODO : Créer le Foncteur AjouterUsager
-/*
-Attributs :
-- &set;
-Méthodes :
-- operateur(); Trouve l'Usager dans le set_, s'il existe on le supprime et on retourne le set_, sinon on retourne juste directement le set_.
-*/
+class AjouterUsager
+{
+public:
+	AjouterUsager(set<Usager*> & set) : set_(set) {  };
+	set<Usager*> & operator()(Usager* usager) { set_.insert(usager); };
+private:
+	set<Usager*> &set_;
+};
+
+
+class SupprimerUsager
+{
+public:
+	SupprimerUsager(set<Usager*> & set) : set_(set) {  };
+	set<Usager*> & operator()(Usager* usager) 
+	{ 
+		FoncteurEgal<Usager> foncteurUsagerEgal(usager);
+		set<Usager*>::iterator itUsagerTrouve = find_if(set_.begin(), set_.end(), foncteurUsagerEgal);
+		if (itUsagerTrouve != set_.end())
+			set_.erase(itUsagerTrouve);
+		return set_;
+	};
+private:
+	set<Usager*> &set_;
+};
