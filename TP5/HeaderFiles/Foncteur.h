@@ -81,10 +81,7 @@ Méthodes :
 class AjouterProduit
 {
 public:
-	AjouterProduit(const multimap<int, Produit*> & m) /*: multimap_(m)*/
-	{ 
-		multimap_ = m;
-	};
+	AjouterProduit(multimap<int, Produit*> & m) : multimap_(m) {  };
 	multimap<int, Produit*> & operator()(const pair<int, Produit*> &p) { multimap_.insert(p); };
 private:
 	multimap<int, Produit*> & multimap_;
@@ -100,11 +97,14 @@ Méthodes :
 class SupprimerProduit
 {
 public:
-	SupprimerProduit(const multimap<int, Produit*> & m) /*: multimap_(m)*/
-	{
-		multimap_ = m;
+	SupprimerProduit(multimap<int, Produit*> & m) : multimap_(m) {	};
+	multimap<int, Produit*> & operator()(const pair<int, Produit*> &p) 
+	{ 
+		FoncteurEgal<Produit> pointeurProduit(p.second); 
+		multimap<int, Produit*>::iterator produitTrouve = find_if(multimap_.begin(), multimap_.end(), pointeurProduit);
+		if (produitTrouve != multimap_.end())
+			multimap_.erase(produitTrouve);
 	};
-	multimap<int, Produit*> & operator()(const pair<int, Produit*> &p) { multimap_.begin(), multimap_.end(),  };
 private:
 	multimap<int, Produit*> & multimap_;
 };
