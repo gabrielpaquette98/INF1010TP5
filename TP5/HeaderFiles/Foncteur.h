@@ -64,7 +64,7 @@ public:
 		borneInf_ = borneInf;
 		borneSup_ = borneSup;
 	};
-	bool operator()(pair<int, Produit*> p) { return (p.second->obtenirPrix() >= borneInf_) && (p.second->obtenirPrix() <= borneSup_); };
+	bool operator()(const pair<int, Produit*> &p) { return (p.second->obtenirPrix() >= borneInf_) && (p.second->obtenirPrix() <= borneSup_); };
 private:
 	double borneInf_;
 	double borneSup_;
@@ -78,6 +78,17 @@ Méthodes :
 */
 
 // TODO : Créer le Foncteur AjouterProduit
+class AjouterProduit
+{
+public:
+	AjouterProduit(const multimap<int, Produit*> & m) /*: multimap_(m)*/
+	{ 
+		multimap_ = m;
+	};
+	multimap<int, Produit*> & operator()(const pair<int, Produit*> &p) { multimap_.insert(p); };
+private:
+	multimap<int, Produit*> & multimap_;
+};
 /*
 Attributs :
 - &multimap_;
@@ -86,6 +97,17 @@ Méthodes :
 */
 
 // TODO : Créer le Foncteur SupprimerProduit
+class SupprimerProduit
+{
+public:
+	SupprimerProduit(const multimap<int, Produit*> & m) /*: multimap_(m)*/
+	{
+		multimap_ = m;
+	};
+	multimap<int, Produit*> & operator()(const pair<int, Produit*> &p) { multimap_.begin(), multimap_.end(),  };
+private:
+	multimap<int, Produit*> & multimap_;
+};
 /*
 Attributs :
 - &multimap_;
