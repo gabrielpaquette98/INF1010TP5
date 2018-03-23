@@ -4,6 +4,11 @@
 * Auteur: Ryan Hardie - 1894061 & 1899088
 *******************************************/
 
+#include <algorithm>
+#include "Usager.h"
+#include <set>
+#include <map>
+
 #pragma once
 
 // TODO : Créer le FoncteurEgal
@@ -38,8 +43,8 @@ Méthodes :
 class FoncteurDiminuerPourcent
 {
 public:
-	FoncteurDiminuerPourcent(int pourcentage) { pourcentage_ = pourcentage; };
-	void operator()(pair<int, Produit*> p) { p.second->modifierPrix(p.second->obtenirPrix * ((100 - pourcentage_) / 100.0)); };
+	FoncteurDiminuerPourcent(int pourcentage) { pourcentage_ = pourcentage; }
+	void operator()(const pair<int, Produit*>& p) { p.second->modifierPrix(p.second->obtenirPrix * ((100 - pourcentage_) / 100.0)); }
 private:
 	int pourcentage_;
 };
