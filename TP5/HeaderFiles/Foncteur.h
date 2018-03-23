@@ -82,6 +82,7 @@ class AjouterProduit
 {
 public:
 	AjouterProduit(const multimap<int, Produit*> & m) /*: multimap_(m)*/
+
 	{ 
 		multimap_ = m;
 	};
