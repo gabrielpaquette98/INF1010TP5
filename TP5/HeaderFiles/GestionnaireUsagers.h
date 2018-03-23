@@ -10,8 +10,24 @@
 #pragma once
 
 #include "GestionnaireGenerique.h"
+#include <set>
 
-// TODO : Créer la classe GestionnaireUsager
+//T: donnees (produit ou usager);
+//C: conteneur (multimap, set, etc);
+//A: type des foncteurs d'ajout
+//S: type des foncteurs de suppression
+template<typename T, typename C, typename A, typename S>
+
+class GestionnaireUsager : public GestionnaireGenerique {
+
+public:
+	double obtenirChiffreAffaires() const;
+
+protected:
+
+private:
+
+};
 
 // TODO : La classe ressemble beaucoup à la classe Gestionnaire
 /*
