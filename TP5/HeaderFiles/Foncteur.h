@@ -72,7 +72,7 @@ class SupprimerProduit
 {
 public:
 	SupprimerProduit(multimap<int, Produit*> & m) : multimap_(m) {	};
-	multimap<int, Produit*> & operator()(const pair<int, Produit*> &p) 
+	multimap<int, Produit*> & operator()(pair<int, Produit*> &p) 
 	{ 
 		FoncteurEgal<Produit> foncteurProduitEgal(p.second); 
 		multimap<int, Produit*>::iterator itProduitTrouve = find_if(multimap_.begin(), multimap_.end(), foncteurProduitEgal);
