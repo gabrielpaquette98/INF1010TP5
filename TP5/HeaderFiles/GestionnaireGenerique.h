@@ -71,11 +71,10 @@ public:
 
 	}
 
-	// TODO verifier
 	template<typename Predicate>
 	void pourChaqueElement(Predicate foncteur) {
-
-		for_each(conteneur_.begin(), conteneur_.end(), foncteur);
+		
+		std::for_each(conteneur_.begin(), conteneur_.end(), foncteur);
 
 	}
 

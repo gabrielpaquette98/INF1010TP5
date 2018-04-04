@@ -16,6 +16,7 @@ GestionnaireUsagers::~GestionnaireUsagers() {
 
 double GestionnaireUsagers::obtenirChiffreAffaires() const {
 	double chiffreAffaires = 0.0;
+	// TODO utiliser pourChaqueElement
 	std::for_each(
 		conteneur_.begin(),
 		conteneur_.end(),
@@ -23,11 +24,13 @@ double GestionnaireUsagers::obtenirChiffreAffaires() const {
 	);
 };
 
+// TODO verifier si cette methode a vraiment sa place dans GestionnaireUsagers
 void GestionnaireUsagers::encherir(Client* usager, ProduitAuxEncheres* produit, double montant) const {
 	//...
 };
 
 void GestionnaireUsagers::reinitialiser() {
+	// TODO utiliser pourChaqueElement
 	std::for_each(
 		conteneur_.begin(),
 		conteneur_.end(),
@@ -36,6 +39,7 @@ void GestionnaireUsagers::reinitialiser() {
 };
 
 void GestionnaireUsagers::afficherProfils() const {
+	// TODO utiliser pourChaqueElement
 	std::for_each(
 		conteneur_.begin(),
 		conteneur_.end(),
