@@ -1,16 +1,16 @@
 #include <iostream>
 #include <iomanip>
-#include "Produit.h"
-#include "Solde.h"
-#include "ProduitAuxEncheres.h"
-#include "ProduitSolde.h"
-#include "Client.h"
-#include "ClientPremium.h"
-#include "Fournisseur.h"
-#include "GestionnaireProduits.h"
-#include "GestionnaireUsagers.h"
+#include "../HeaderFiles/Produit.h"
+#include "../HeaderFiles/Solde.h"
+#include "../HeaderFiles/ProduitAuxEncheres.h"
+#include "../HeaderFiles/ProduitSolde.h"
+#include "../HeaderFiles/Client.h"
+#include "../HeaderFiles/ClientPremium.h"
+#include "../HeaderFiles/Fournisseur.h"
+#include "../HeaderFiles/GestionnaireProduits.h"
+#include "../HeaderFiles/GestionnaireUsagers.h"
 #include <vector>
-#include "Foncteur.h"
+#include "../HeaderFiles/Foncteur.h"
 
 using namespace std;
 

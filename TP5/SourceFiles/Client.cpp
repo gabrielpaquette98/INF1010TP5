@@ -1,5 +1,5 @@
-#include "Client.h"
-#include "ProduitAuxEncheres.h"
+#include "../HeaderFiles/Client.h"
+#include "../HeaderFiles/ProduitAuxEncheres.h"
 #include <iostream>
 
 Client::Client(unsigned int codeClient)

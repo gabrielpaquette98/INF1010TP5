@@ -1,4 +1,4 @@
-#include "ClientPremium.h"
+#include "../HeaderFiles/ClientPremium.h"
 #include <iostream>
 
 ClientPremium::ClientPremium(unsigned int joursRestants)

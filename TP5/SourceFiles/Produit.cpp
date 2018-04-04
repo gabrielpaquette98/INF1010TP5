@@ -1,5 +1,5 @@
-#include "Produit.h"
-#include "Fournisseur.h"
+#include "../HeaderFiles/Produit.h"
+#include "../HeaderFiles/Fournisseur.h"
 #include <iostream>
 #include <string>
 

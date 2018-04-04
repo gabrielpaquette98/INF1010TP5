@@ -1,4 +1,4 @@
-#include "ProduitAuxEncheres.h"
+#include "../HeaderFiles/ProduitAuxEncheres.h"
 
 ProduitAuxEncheres::ProduitAuxEncheres(double prix)
     : Produit(),

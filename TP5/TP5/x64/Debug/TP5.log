@@ -1,17 +1,459 @@
-﻿  Client.cpp
-c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\client.cpp(1): fatal error C1083: Cannot open include file: 'Client.h': No such file or directory
-  ClientPremium.cpp
-c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\clientpremium.cpp(1): fatal error C1083: Cannot open include file: 'ClientPremium.h': No such file or directory
-  Fournisseur.cpp
-c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\fournisseur.cpp(1): fatal error C1083: Cannot open include file: 'Fournisseur.h': No such file or directory
-  Gestionnaire.cpp
-c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\gestionnaire.cpp(1): fatal error C1083: Cannot open include file: 'Gestionnaire.h': No such file or directory
+﻿  Gestionnaire.cpp
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\gestionnaire.cpp(12): error C2039: 'afficherProfil': is not a member of 'Usager'
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\usager.h(10): note: see declaration of 'Usager'
   GestionnaireProduits.cpp
-c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\gestionnaireproduits.cpp(7): fatal error C1083: Cannot open include file: 'GestionnaireProduits.h': No such file or directory
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(45): error C3867: 'Produit::obtenirPrix': non-standard syntax; use '&' to create a pointer to member
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(45): error C2296: '*': illegal, left operand has type 'double (__cdecl Produit::* )(void) const'
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(90): error C2064: term does not evaluate to a function taking 0 arguments
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(90): note: class does not define an 'operator()' or a user defined conversion operator to a pointer-to-function or reference-to-function that takes appropriate number of arguments
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(90): error C2672: 'find_if': no matching overloaded function found
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(90): error C2780: '_InIt std::find_if(_InIt,const _InIt,_Pr)': expects 3 arguments - 2 provided
+  c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.13.26128\include\algorithm(186): note: see declaration of 'std::find_if'
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(122): error C2143: syntax error: missing ')' before '('
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(122): error C2206: 'foncteurUsagerEgal': typedef cannot be used for function definition
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(122): error C2059: syntax error: ')'
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(123): error C3861: 'foncteurUsagerEgal': identifier not found
   GestionnaireUsagers.cpp
-c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\gestionnaireusagers.cpp(7): fatal error C1083: Cannot open include file: 'GestionnaireUsagers.h': No such file or directory
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(45): error C3867: 'Produit::obtenirPrix': non-standard syntax; use '&' to create a pointer to member
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(45): error C2296: '*': illegal, left operand has type 'double (__cdecl Produit::* )(void) const'
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(90): error C2064: term does not evaluate to a function taking 0 arguments
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(90): note: class does not define an 'operator()' or a user defined conversion operator to a pointer-to-function or reference-to-function that takes appropriate number of arguments
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(90): error C2672: 'find_if': no matching overloaded function found
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(90): error C2780: '_InIt std::find_if(_InIt,const _InIt,_Pr)': expects 3 arguments - 2 provided
+  c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.13.26128\include\algorithm(186): note: see declaration of 'std::find_if'
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(122): error C2143: syntax error: missing ')' before '('
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(122): error C2206: 'foncteurUsagerEgal': typedef cannot be used for function definition
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(122): error C2059: syntax error: ')'
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(123): error C3861: 'foncteurUsagerEgal': identifier not found
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\gestionnaireusagers.h(21): error C2955: 'GestionnaireGenerique': use of class template requires template argument list
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\gestionnairegenerique.h(20): note: see declaration of 'GestionnaireGenerique'
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\gestionnaireusagers.h(30): note: see reference to class template instantiation 'GestionnaireUsager<T,C,A,S>' being compiled
   main.cpp
-c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(3): fatal error C1083: Cannot open include file: 'Produit.h': No such file or directory
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(45): error C3867: 'Produit::obtenirPrix': non-standard syntax; use '&' to create a pointer to member
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(45): error C2296: '*': illegal, left operand has type 'double (__cdecl Produit::* )(void) const'
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(90): error C2064: term does not evaluate to a function taking 0 arguments
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(90): note: class does not define an 'operator()' or a user defined conversion operator to a pointer-to-function or reference-to-function that takes appropriate number of arguments
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(90): error C2672: 'find_if': no matching overloaded function found
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(90): error C2780: '_InIt std::find_if(_InIt,const _InIt,_Pr)': expects 3 arguments - 2 provided
+  c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.13.26128\include\algorithm(186): note: see declaration of 'std::find_if'
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(122): error C2143: syntax error: missing ')' before '('
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(122): error C2206: 'foncteurUsagerEgal': typedef cannot be used for function definition
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(122): error C2059: syntax error: ')'
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(123): error C3861: 'foncteurUsagerEgal': identifier not found
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\gestionnaireusagers.h(21): error C2955: 'GestionnaireGenerique': use of class template requires template argument list
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\gestionnairegenerique.h(20): note: see declaration of 'GestionnaireGenerique'
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\gestionnaireusagers.h(30): note: see reference to class template instantiation 'GestionnaireUsager<T,C,A,S>' being compiled
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(20): error C2065: 'GestionnaireUsagers': undeclared identifier
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(20): error C2146: syntax error: missing ';' before identifier 'poly'
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(20): error C2065: 'poly': undeclared identifier
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(43): error C2065: 'poly': undeclared identifier
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(43): error C2228: left of '.ajouter' must have class/struct/union
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(43): note: type is 'unknown-type'
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(44): error C2065: 'poly': undeclared identifier
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(44): error C2228: left of '.ajouter' must have class/struct/union
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(44): note: type is 'unknown-type'
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(45): error C2065: 'poly': undeclared identifier
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(45): error C2228: left of '.ajouter' must have class/struct/union
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(45): note: type is 'unknown-type'
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(46): error C2065: 'poly': undeclared identifier
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(46): error C2228: left of '.ajouter' must have class/struct/union
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(46): note: type is 'unknown-type'
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(47): error C2065: 'poly': undeclared identifier
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(47): error C2228: left of '.ajouter' must have class/struct/union
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(47): note: type is 'unknown-type'
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(48): error C2065: 'poly': undeclared identifier
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(48): error C2228: left of '.ajouter' must have class/struct/union
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(48): note: type is 'unknown-type'
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(49): error C2065: 'poly': undeclared identifier
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(49): error C2228: left of '.ajouter' must have class/struct/union
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(49): note: type is 'unknown-type'
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(50): error C2065: 'poly': undeclared identifier
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(50): error C2228: left of '.ajouter' must have class/struct/union
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(50): note: type is 'unknown-type'
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(126): error C2065: 'poly': undeclared identifier
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(126): error C2228: left of '.encherir' must have class/struct/union
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(126): note: type is 'unknown-type'
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(127): error C2819: type 'std::vector<Produit *,std::allocator<_Ty>>' does not have an overloaded member 'operator ->'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\client.h(20): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(127): note: did you intend to use '.' instead?
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(127): error C2039: 'obtenirConteneur': is not a member of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\client.h(20): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(127): error C2228: left of '.size' must have class/struct/union
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(128): error C2065: 'poly': undeclared identifier
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(128): error C2228: left of '.encherir' must have class/struct/union
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(128): note: type is 'unknown-type'
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(129): error C2065: 'poly': undeclared identifier
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(129): error C2228: left of '.encherir' must have class/struct/union
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(129): note: type is 'unknown-type'
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(131): error C2819: type 'std::vector<Produit *,std::allocator<_Ty>>' does not have an overloaded member 'operator ->'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\client.h(20): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(131): note: did you intend to use '.' instead?
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(131): error C2039: 'obtenirConteneur': is not a member of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\client.h(20): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(131): error C2228: left of '.size' must have class/struct/union
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(132): error C2065: 'poly': undeclared identifier
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(132): error C2228: left of '.encherir' must have class/struct/union
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(132): note: type is 'unknown-type'
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(134): error C2819: type 'std::vector<Produit *,std::allocator<_Ty>>' does not have an overloaded member 'operator ->'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\client.h(20): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(134): note: did you intend to use '.' instead?
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(134): error C2039: 'obtenirConteneur': is not a member of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\client.h(20): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(134): error C2228: left of '.size' must have class/struct/union
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(136): error C2065: 'poly': undeclared identifier
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(136): error C2228: left of '.encherir' must have class/struct/union
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(136): note: type is 'unknown-type'
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(139): error C2065: 'poly': undeclared identifier
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(139): error C2228: left of '.encherir' must have class/struct/union
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(139): note: type is 'unknown-type'
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(140): error C2819: type 'std::vector<Produit *,std::allocator<_Ty>>' does not have an overloaded member 'operator ->'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\client.h(20): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(140): note: did you intend to use '.' instead?
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(140): error C2039: 'obtenirConteneur': is not a member of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\client.h(20): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(140): error C2228: left of '.size' must have class/struct/union
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(142): error C2065: 'poly': undeclared identifier
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(142): error C2228: left of '.encherir' must have class/struct/union
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(142): note: type is 'unknown-type'
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(143): error C2819: type 'std::vector<Produit *,std::allocator<_Ty>>' does not have an overloaded member 'operator ->'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\client.h(20): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(143): note: did you intend to use '.' instead?
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(143): error C2039: 'obtenirConteneur': is not a member of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\client.h(20): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(143): error C2228: left of '.size' must have class/struct/union
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(144): error C2819: type 'std::vector<Produit *,std::allocator<_Ty>>' does not have an overloaded member 'operator ->'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\client.h(20): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(144): note: did you intend to use '.' instead?
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(144): error C2039: 'obtenirConteneur': is not a member of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\client.h(20): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(144): error C2228: left of '.find' must have class/struct/union
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(144): error C2227: left of '->second' must point to class/struct/union/generic type
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(144): error C2227: left of '->obtenirNom' must point to class/struct/union/generic type
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(156): error C2819: type 'std::vector<Produit *,std::allocator<_Ty>>' does not have an overloaded member 'operator ->'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\client.h(20): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(156): note: did you intend to use '.' instead?
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(156): error C2039: 'obtenirConteneur': is not a member of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\client.h(20): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(156): error C2228: left of '.size' must have class/struct/union
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(157): error C2819: type 'std::vector<Produit *,std::allocator<_Ty>>' does not have an overloaded member 'operator ->'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\client.h(20): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(157): note: did you intend to use '.' instead?
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(157): error C2039: 'obtenirConteneur': is not a member of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\client.h(20): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(157): error C2228: left of '.find' must have class/struct/union
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(157): error C2227: left of '->second' must point to class/struct/union/generic type
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(157): error C2227: left of '->obtenirNom' must point to class/struct/union/generic type
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(158): error C2819: type 'std::vector<Produit *,std::allocator<_Ty>>' does not have an overloaded member 'operator ->'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\client.h(20): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(158): note: did you intend to use '.' instead?
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(158): error C2039: 'obtenirConteneur': is not a member of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\client.h(20): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(158): error C2228: left of '.find' must have class/struct/union
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(158): error C2227: left of '->second' must point to class/struct/union/generic type
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(158): error C2227: left of '->obtenirNom' must point to class/struct/union/generic type
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(162): error C2819: type 'std::vector<Produit *,std::allocator<_Ty>>' does not have an overloaded member 'operator ->'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\client.h(20): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(162): note: did you intend to use '.' instead?
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(162): error C2039: 'obtenirConteneur': is not a member of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\client.h(20): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(162): error C2228: left of '.size' must have class/struct/union
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(163): error C2819: type 'std::vector<Produit *,std::allocator<_Ty>>' does not have an overloaded member 'operator ->'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\client.h(20): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(163): note: did you intend to use '.' instead?
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(163): error C2039: 'obtenirConteneur': is not a member of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\client.h(20): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(163): error C2228: left of '.find' must have class/struct/union
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(163): error C2227: left of '->second' must point to class/struct/union/generic type
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(163): error C2227: left of '->obtenirNom' must point to class/struct/union/generic type
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(164): error C2819: type 'std::vector<Produit *,std::allocator<_Ty>>' does not have an overloaded member 'operator ->'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\client.h(20): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(164): note: did you intend to use '.' instead?
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(164): error C2039: 'obtenirConteneur': is not a member of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\client.h(20): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(164): error C2228: left of '.find' must have class/struct/union
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(164): error C2227: left of '->second' must point to class/struct/union/generic type
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(164): error C2227: left of '->obtenirNom' must point to class/struct/union/generic type
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(168): error C2819: type 'std::vector<Produit *,std::allocator<_Ty>>' does not have an overloaded member 'operator ->'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\client.h(20): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(168): note: did you intend to use '.' instead?
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(168): error C2039: 'obtenirConteneur': is not a member of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\client.h(20): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(168): error C2228: left of '.size' must have class/struct/union
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(172): error C2819: type 'std::vector<Produit *,std::allocator<_Ty>>' does not have an overloaded member 'operator ->'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\client.h(20): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(172): note: did you intend to use '.' instead?
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(172): error C2039: 'obtenirConteneur': is not a member of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\client.h(20): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(172): error C2228: left of '.size' must have class/struct/union
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(176): error C2819: type 'std::vector<Produit *,std::allocator<_Ty>>' does not have an overloaded member 'operator ->'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\client.h(20): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(176): note: did you intend to use '.' instead?
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(176): error C2039: 'obtenirConteneur': is not a member of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\client.h(20): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(176): error C2228: left of '.size' must have class/struct/union
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(181): error C2819: type 'std::vector<Produit *,std::allocator<_Ty>>' does not have an overloaded member 'operator ->'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\client.h(20): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(181): note: did you intend to use '.' instead?
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(181): error C2039: 'obtenirConteneur': is not a member of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\client.h(20): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(181): error C2228: left of '.size' must have class/struct/union
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(181): fatal error C1003: error count exceeds 100; stopping compilation
   Produit.cpp
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\produit.cpp(1): fatal error C1083: Cannot open include file: 'Produit.h': No such file or directory
   ProduitAuxEncheres.cpp
@@ -19,7 +461,8 @@ c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\produitauxencheres.c
   ProduitSolde.cpp
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\produitsolde.cpp(1): fatal error C1083: Cannot open include file: 'ProduitSolde.h': No such file or directory
   Solde.cpp
-c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\solde.cpp(1): fatal error C1083: Cannot open include file: 'Solde.h': No such file or directory
   Usager.cpp
-c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\usager.cpp(1): fatal error C1083: Cannot open include file: 'Usager.h': No such file or directory
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\usager.cpp(8): error C2614: 'Usager': illegal member initialization: 'identifiant_' is not a base or member
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\usager.cpp(40): error C2065: 'identifiant_': undeclared identifier
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\usager.cpp(56): error C2065: 'reference': undeclared identifier
   Generating Code...

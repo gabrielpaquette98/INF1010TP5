@@ -1,4 +1,4 @@
-#include "Solde.h"
+#include "../HeaderFiles/Solde.h"
 
 Solde::Solde(int pourcentageRabais)
     : pourcentageRabais_(pourcentageRabais)
