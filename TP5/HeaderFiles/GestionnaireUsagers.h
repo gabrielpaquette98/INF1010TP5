@@ -12,6 +12,8 @@
 #include "./GestionnaireGenerique.h"
 #include "./Usager.h"
 #include "./Client.h"
+#include "./ClientPremium.h"
+#include "./Fournisseur.h"
 #include "./Foncteur.h"
 #include "./ProduitAuxEncheres.h"
 #include <set>

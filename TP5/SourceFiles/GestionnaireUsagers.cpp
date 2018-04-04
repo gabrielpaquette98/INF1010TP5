@@ -43,6 +43,22 @@ void GestionnaireUsagers::afficherProfils() const {
 	std::for_each(
 		conteneur_.begin(),
 		conteneur_.end(),
-		[](Usager* usager) { (*usager).afficher(); }
+		[](Usager* usager) { 
+			if (dynamic_cast<Fournisseur*>(usager) != nullptr) {
+				Fournisseur fournisseurTemp = *dynamic_cast<Fournisseur*>(usager);
+				fournisseurTemp.afficher();
+			}
+			else if (dynamic_cast<ClientPremium*>(usager) != nullptr) {
+				ClientPremium clientPremiumTemp = *dynamic_cast<ClientPremium*>(usager);
+				clientPremiumTemp.afficher();
+			}
+			else if (dynamic_cast<Client*>(usager) != nullptr) {
+				Client clientTemp = *dynamic_cast<Client*>(usager);
+				clientTemp.afficher();
+			}
+			else {
+				std::cout << '\t' << '\t' << std::left << "PROFIL INVALIDE" << endl;
+			}
+		}
 	);
 }
