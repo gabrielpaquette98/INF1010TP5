@@ -20,6 +20,8 @@ class GestionnaireProduits : GestionnaireGenerique
 	<Produit, multimap<int, Produit*>, AjouterProduit, SupprimerProduit> {
 	
 public:
+	GestionnaireProduits();
+	GestionnaireProduits();
 	void reinitialiserClient();
 	void reinitialiserFournisseur();
 	void afficher() const;
