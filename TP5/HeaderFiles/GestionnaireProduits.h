@@ -9,29 +9,29 @@
 
 #pragma once
 
-#include "GestionnaireGenerique.h"
+#include "./GestionnaireGenerique.h"
+#include "./Produit.h"
+#include <map>
+#include <vector>
 
 // TODO : Créer la classe GestionnaireProduits
-//T: donnees (produit ou usager);
-//C: conteneur (multimap, set, etc);
-//A: type des foncteurs d'ajout
-//S: type des foncteurs de suppression
-template<typename T, typename C, typename A, typename S>
 
-class GestionnaireProduits : GestionnaireGenerique {
+class GestionnaireProduits : GestionnaireGenerique 
+	<Produit, multimap<int, Produit*>, AjouterProduit, SupprimerProduit> {
+	
+public:
+	void reinitialiserClient();
+	void reinitialiserFournisseur();
+	void afficher() const;
+	double obtenirTotalAPayer() const;
+	double obtenirTotalApayerPremium() const;
+	Produit trouverProduitPlusCher() const;
+	vector<pair<int, Produit*>> obtenirProduitsEntre() const;
+	Produit* obtenirProduitSuivant(Produit* produit) const;
 
+protected:
 
-	// TODO : Méthodes :
-	/*
-	- reinitialiserClient();
-	- reinitialiserFournisseur();
-	- afficher();
-	- obtenirTotalAPayer();
-	- obtenirTotalApayerPremium();
-	- trouverProduitPlusCher();
-	- obtenirProduitsEntre();
-	- obtenirProduitSuivant();
-	*/
+private:
 
 };
 
