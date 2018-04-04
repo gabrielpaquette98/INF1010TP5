@@ -25,9 +25,9 @@ public:
 		return conteneur_;
 	}
 
-	void ajouter(T* element) {
+	void ajouter(A* element) {
 
-		switch (typeid(T)) {
+		switch (typeid(A)) {
 
 		case typeid(Usager) :
 			AjouterUsager foncteurAjoutUsager(conteneur_);
@@ -48,9 +48,9 @@ public:
 
 	}
 
-	void supprimer(T* element) {
+	void supprimer(S* element) {
 
-		switch (typeid(T)) {
+		switch (typeid(S)) {
 
 		case typeid(Usager) :
 			SupprimerUsager foncteurSupprUsager(conteneur_);
