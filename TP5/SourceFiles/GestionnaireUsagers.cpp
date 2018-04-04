@@ -7,11 +7,11 @@
 #include "../HeaderFiles/GestionnaireUsagers.h"
 
 GestionnaireUsagers::GestionnaireUsagers() {
-	//...
+	// ne rien faire
 };
 
 GestionnaireUsagers::~GestionnaireUsagers() {
-	//...
+	// ne rien faire
 }
 
 double GestionnaireUsagers::obtenirChiffreAffaires() const {
@@ -39,9 +39,6 @@ void GestionnaireUsagers::afficherProfils() const {
 	std::for_each(
 		conteneur_.begin(),
 		conteneur_.end(),
-		[](Usager* usager) {
-		(*usager).afficher();
-			//...
-		}
+		[](Usager* usager) { (*usager).afficher(); }
 	);
 }
