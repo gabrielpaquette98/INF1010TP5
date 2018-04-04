@@ -12,17 +12,27 @@
 #include "GestionnaireGenerique.h"
 
 // TODO : Créer la classe GestionnaireProduits
+//T: donnees (produit ou usager);
+//C: conteneur (multimap, set, etc);
+//A: type des foncteurs d'ajout
+//S: type des foncteurs de suppression
+template<typename T, typename C, typename A, typename S>
 
-// TODO : Méthodes :
-/*
-- reinitialiserClient();
-- reinitialiserFournisseur();
-- afficher();
-- obtenirTotalAPayer();
-- obtenirTotalApayerPremium();
-- trouverProduitPlusCher();
-- obtenirProduitsEntre();
-- obtenirProduitSuivant();
-*/
+class GestionnaireProduits : GestionnaireGenerique {
+
+
+	// TODO : Méthodes :
+	/*
+	- reinitialiserClient();
+	- reinitialiserFournisseur();
+	- afficher();
+	- obtenirTotalAPayer();
+	- obtenirTotalApayerPremium();
+	- trouverProduitPlusCher();
+	- obtenirProduitsEntre();
+	- obtenirProduitSuivant();
+	*/
+
+};
 
 #endif // !GESTIONNAIREPRODUITS_H

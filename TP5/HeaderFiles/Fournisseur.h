@@ -3,8 +3,9 @@
 
 #include <string>
 #include <vector>
-#include "Usager.h"
-#include "Produit.h"
+#include "./Usager.h"
+#include "./Produit.h"
+#include "./GestionnaireProduits.h"
 
 using namespace std;
 
@@ -14,7 +15,7 @@ class Fournisseur : public Usager
     Fournisseur();
     Fournisseur(const string &nom, const string &prenom, int identifiant, const string &codePostal);
 
-	// TODO : Modifier l'implémentation de ses méthodes : ----
+	// TODO : Modifier l'implémentation de ces méthodes : ----
     vector<Produit *> obtenirCatalogue() const;
     void afficherCatalogue() const;
     virtual void afficher() const;
