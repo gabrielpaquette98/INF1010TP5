@@ -23,7 +23,7 @@ class GestionnaireUsagers : public GestionnaireGenerique
 
 public:
 	GestionnaireUsagers();
-	GestionnaireUsagers();
+	~GestionnaireUsagers();
 	double obtenirChiffreAffaires() const;
 	void encherir(Client* usager, ProduitAuxEncheres* produit, double montant) const;
 	void reinitialiser();

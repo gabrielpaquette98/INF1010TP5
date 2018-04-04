@@ -10,9 +10,6 @@ c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(122): err
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(122): error C2206: 'foncteurUsagerEgal': typedef cannot be used for function definition
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(122): error C2059: syntax error: ')'
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(123): error C3861: 'foncteurUsagerEgal': identifier not found
-c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\gestionnaireproduits.h(21): error C2955: 'GestionnaireGenerique': use of class template requires template argument list
-  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\gestionnairegenerique.h(20): note: see declaration of 'GestionnaireGenerique'
-  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\gestionnaireproduits.h(36): note: see reference to class template instantiation 'GestionnaireProduits<T,C,A,S>' being compiled
   GestionnaireProduits.cpp
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(45): error C3867: 'Produit::obtenirPrix': non-standard syntax; use '&' to create a pointer to member
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(45): error C2296: '*': illegal, left operand has type 'double (__cdecl Produit::* )(void) const'
@@ -25,9 +22,7 @@ c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(122): err
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(122): error C2206: 'foncteurUsagerEgal': typedef cannot be used for function definition
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(122): error C2059: syntax error: ')'
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(123): error C3861: 'foncteurUsagerEgal': identifier not found
-c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\gestionnaireproduits.h(21): error C2955: 'GestionnaireGenerique': use of class template requires template argument list
-  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\gestionnairegenerique.h(20): note: see declaration of 'GestionnaireGenerique'
-  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\gestionnaireproduits.h(36): note: see reference to class template instantiation 'GestionnaireProduits<T,C,A,S>' being compiled
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\gestionnaireproduits.cpp(27): error C3867: 'ProduitAuxEncheres::obtenirPrixInitial': non-standard syntax; use '&' to create a pointer to member
   GestionnaireUsagers.cpp
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(45): error C3867: 'Produit::obtenirPrix': non-standard syntax; use '&' to create a pointer to member
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(45): error C2296: '*': illegal, left operand has type 'double (__cdecl Produit::* )(void) const'
@@ -40,9 +35,6 @@ c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(122): err
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(122): error C2206: 'foncteurUsagerEgal': typedef cannot be used for function definition
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(122): error C2059: syntax error: ')'
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(123): error C3861: 'foncteurUsagerEgal': identifier not found
-c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\gestionnaireusagers.h(24): error C2535: 'GestionnaireUsagers::GestionnaireUsagers(void)': member function already defined or declared
-  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\gestionnaireusagers.h(23): note: see declaration of 'GestionnaireUsagers::GestionnaireUsagers'
-c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\gestionnaireusagers.cpp(13): error C2600: 'GestionnaireUsagers::~GestionnaireUsagers': cannot define a compiler-generated special member function (must be declared in the class first)
   main.cpp
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(45): error C3867: 'Produit::obtenirPrix': non-standard syntax; use '&' to create a pointer to member
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(45): error C2296: '*': illegal, left operand has type 'double (__cdecl Produit::* )(void) const'
@@ -55,11 +47,6 @@ c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(122): err
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(122): error C2206: 'foncteurUsagerEgal': typedef cannot be used for function definition
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(122): error C2059: syntax error: ')'
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(123): error C3861: 'foncteurUsagerEgal': identifier not found
-c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\gestionnaireproduits.h(21): error C2955: 'GestionnaireGenerique': use of class template requires template argument list
-  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\gestionnairegenerique.h(20): note: see declaration of 'GestionnaireGenerique'
-  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\gestionnaireproduits.h(36): note: see reference to class template instantiation 'GestionnaireProduits<T,C,A,S>' being compiled
-c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\gestionnaireusagers.h(24): error C2535: 'GestionnaireUsagers::GestionnaireUsagers(void)': member function already defined or declared
-  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\gestionnaireusagers.h(23): note: see declaration of 'GestionnaireUsagers::GestionnaireUsagers'
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(43): error C2664: 'void GestionnaireGenerique<Usager,std::set<Usager *,std::less<_Kty>,std::allocator<_Kty>>,AjouterUsager,SupprimerUsager>::ajouter(A *)': cannot convert argument 1 from 'Client *' to 'AjouterUsager *'
           with
           [
@@ -616,7 +603,28 @@ c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(192): error
               _Ty=Produit *
           ]
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(192): error C2228: left of '.size' must have class/struct/union
-c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(192): fatal error C1003: error count exceeds 100; stopping compilation
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(193): error C2819: type 'std::vector<Produit *,std::allocator<_Ty>>' does not have an overloaded member 'operator ->'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\client.h(20): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(193): note: did you intend to use '.' instead?
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(193): error C2039: 'obtenirConteneur': is not a member of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\client.h(20): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(193): fatal error C1003: error count exceeds 100; stopping compilation
   Produit.cpp
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(45): error C3867: 'Produit::obtenirPrix': non-standard syntax; use '&' to create a pointer to member
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(45): error C2296: '*': illegal, left operand has type 'double (__cdecl Produit::* )(void) const'
@@ -629,7 +637,4 @@ c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(122): err
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(122): error C2206: 'foncteurUsagerEgal': typedef cannot be used for function definition
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(122): error C2059: syntax error: ')'
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(123): error C3861: 'foncteurUsagerEgal': identifier not found
-c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\gestionnaireproduits.h(21): error C2955: 'GestionnaireGenerique': use of class template requires template argument list
-  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\gestionnairegenerique.h(20): note: see declaration of 'GestionnaireGenerique'
-  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\gestionnaireproduits.h(36): note: see reference to class template instantiation 'GestionnaireProduits<T,C,A,S>' being compiled
   Generating Code...

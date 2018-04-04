@@ -11,6 +11,8 @@
 
 #include "./GestionnaireGenerique.h"
 #include "./Produit.h"
+#include "./ProduitAuxEncheres.h"
+#include "./ProduitSolde.h"
 #include <map>
 #include <vector>
 
@@ -21,14 +23,14 @@ class GestionnaireProduits : GestionnaireGenerique
 	
 public:
 	GestionnaireProduits();
-	GestionnaireProduits();
+	~GestionnaireProduits();
 	void reinitialiserClient();
 	void reinitialiserFournisseur();
 	void afficher() const;
 	double obtenirTotalAPayer() const;
 	double obtenirTotalApayerPremium() const;
 	Produit trouverProduitPlusCher() const;
-	vector<pair<int, Produit*>> obtenirProduitsEntre() const;
+	vector<pair<int, Produit*>> obtenirProduitsEntre(double min, double max) const;
 	Produit* obtenirProduitSuivant(Produit* produit) const;
 
 protected:

@@ -16,11 +16,16 @@ GestionnaireProduits::~GestionnaireProduits() {
 
 void GestionnaireProduits::reinitialiserClient() {
 	// TODO utiliser pourChaqueElement
+	// TODO s'informer de l'utilite de cette methode pour savoir si elle est correctement implementee
 	std::for_each(
 		conteneur_.begin(),
 		conteneur_.end(),
 		[](Produit* produit) { 
-			//...
+			if (dynamic_cast<ProduitAuxEncheres*>(produit) != nullptr) {
+				ProduitAuxEncheres produitAReinit = *dynamic_cast<ProduitAuxEncheres*>(produit);
+				produitAReinit.modifierEncherisseur(nullptr);
+				produitAReinit.modifierPrix(produitAReinit.obtenirPrixInitial);
+			}
 		}
 	);
 }
@@ -35,7 +40,24 @@ void GestionnaireProduits::reinitialiserFournisseur() {
 }
 
 void GestionnaireProduits::afficher() const {
-	//...
+	// TODO utiliser pourChaqueElement
+	std::for_each(
+		conteneur_.begin(),
+		conteneur_.end(),
+		[](Produit* produit) {
+			if (dynamic_cast<ProduitAuxEncheres*>(produit) != nullptr) {
+				ProduitAuxEncheres produitAafficher = *dynamic_cast<ProduitAuxEncheres*>(produit);
+				produitAafficher.afficher();
+			}
+			else if (dynamic_cast<ProduitSolde*>(produit) != nullptr) {
+				ProduitSolde produitAafficher = *dynamic_cast<ProduitSolde*>(produit);
+				produitAafficher.afficher();
+			}
+			else {
+				produit->afficher();
+			}
+		}
+	);
 }
 
 double GestionnaireProduits::obtenirTotalAPayer() const {
@@ -50,7 +72,7 @@ Produit GestionnaireProduits::trouverProduitPlusCher() const {
 	//...
 }
 
-vector<pair<int, Produit*>> GestionnaireProduits::obtenirProduitsEntre() const {
+vector<pair<int, Produit*>> GestionnaireProduits::obtenirProduitsEntre(double min, double max) const {
 	//...
 }
 
