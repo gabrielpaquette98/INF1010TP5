@@ -10,6 +10,7 @@
 #pragma once
 
 #include "./Foncteur.h"
+#include <algorithm>
 
 //T: donnees (produit ou usager);
 //C: conteneur (multimap, set, etc);

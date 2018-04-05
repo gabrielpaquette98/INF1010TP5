@@ -112,5 +112,10 @@ vector<pair<int, Produit*>> GestionnaireProduits::obtenirProduitsEntre(double mi
 
 Produit* GestionnaireProduits::obtenirProduitSuivant(Produit* produit) const {
 	// TODO utiliser bind dans un find_if
+	std::find_if(
+		conteneur_.begin(),
+		conteneur_.end(),
+		//...
+	);
 	//...
 }
