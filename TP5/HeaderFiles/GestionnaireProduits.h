@@ -16,6 +16,8 @@
 #include <map>
 #include <vector>
 
+const uint8_t RABAIS_PAR_PRODUIT = 5;
+
 // TODO : Créer la classe GestionnaireProduits
 
 class GestionnaireProduits : GestionnaireGenerique 

@@ -22,7 +22,6 @@ c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(122): err
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(122): error C2206: 'foncteurUsagerEgal': typedef cannot be used for function definition
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(122): error C2059: syntax error: ')'
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(123): error C3861: 'foncteurUsagerEgal': identifier not found
-c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\gestionnaireproduits.cpp(27): error C3867: 'ProduitAuxEncheres::obtenirPrixInitial': non-standard syntax; use '&' to create a pointer to member
   GestionnaireUsagers.cpp
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(45): error C3867: 'Produit::obtenirPrix': non-standard syntax; use '&' to create a pointer to member
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(45): error C2296: '*': illegal, left operand has type 'double (__cdecl Produit::* )(void) const'
