@@ -4,17 +4,19 @@
 
 Client::Client(unsigned int codeClient)
     : Usager(),
-      codeClient_(codeClient)
+      codeClient_(codeClient),
+	panier_(nullptr)
 {
-	// TODO : À modifier
+
 }
 
 Client::Client(const string &nom, const string &prenom, int identifiant,
                const string &codePostal, unsigned int codeClient)
     : Usager(nom, prenom, identifiant, codePostal),
-      codeClient_(codeClient)
+      codeClient_(codeClient),
+	panier_(nullptr)
 {
-	// TODO : À modifier
+
 }
 
 unsigned int Client::obtenirCodeClient() const
@@ -22,19 +24,19 @@ unsigned int Client::obtenirCodeClient() const
     return codeClient_;
 }
 
-vector<Produit *> Client::obtenirPanier() const
+GestionnaireProduits* Client::obtenirPanier() const
 {
-	// TODO : À modifier
     return panier_;
 }
 
 double Client::obtenirTotalAPayer() const
 {
+	return panier_->obtenirTotalAPayer();
 	// TODO : À modifier
-    double montant = 0;
+    /*double montant = 0;
     for (unsigned int i = 0; i < panier_.size(); i++)
         montant += panier_[i]->obtenirPrix();
-    return montant;
+    return montant;*/
 }
 
 void Client::afficherPanier() const
@@ -42,17 +44,18 @@ void Client::afficherPanier() const
 	// TODO : À modifier
     cout << "PANIER (de " << obtenirNom() << ")"
          << "\n";
-    for (unsigned int i = 0; i < panier_.size(); i++)
+	panier_->afficher();
+    /*for (unsigned int i = 0; i < panier_.size(); i++)
         panier_[i]->afficher();
-    cout << endl;
+    cout << endl;*/
 }
 
 void Client::afficher() const
 {
 	// TODO : À modifier
-    Usager::afficher();
+    /*Usager::afficher();
     cout << "\t\tcode client:\t" << codeClient_ << endl
-         << "\t\tpanier:\t\t" << panier_.size() << " elements" << endl;
+         << "\t\tpanier:\t\t" << panier_.size() << " elements" << endl;*/
 }
 
 void Client::modifierCodeClient(unsigned int codeClient)
@@ -85,8 +88,9 @@ void Client::ajouterProduit(Produit *produit)
 
 void Client::reinitialiser()
 {
+	panier_->reinitialiserClient();
 	// TODO : À modifier
-    for (unsigned int i = 0; i < panier_.size(); i++)
+    /*for (unsigned int i = 0; i < panier_.size(); i++)
     {
         ProduitAuxEncheres *produit = dynamic_cast<ProduitAuxEncheres *>(panier_[i]);
         if (produit) {
@@ -94,5 +98,5 @@ void Client::reinitialiser()
             produit->modifierPrix(produit->obtenirPrixInitial());
         }
     }
-    panier_.clear();
+    panier_.clear();*/
 }
