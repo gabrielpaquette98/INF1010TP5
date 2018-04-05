@@ -5,6 +5,7 @@
 #include <vector>
 #include "Usager.h"
 #include "Produit.h"
+#include "./GestionnaireProduits.h"
 
 using namespace std;
 
@@ -16,8 +17,8 @@ class Client : public Usager
 
     unsigned int obtenirCodeClient() const;
 	void modifierCodeClient(unsigned int codeClient);
-	// TODO : Modifier ses méthodes : -------------------
-    vector<Produit *> obtenirPanier() const;
+	// TODO : Modifier ces méthodes : -------------------
+    GestionnaireProduits * obtenirPanier() const;
     virtual double obtenirTotalAPayer() const;
     void afficherPanier() const;
     virtual void afficher() const;
@@ -30,7 +31,7 @@ class Client : public Usager
 	Produit* trouverProduitPlusCher() const;
   
   protected:
-    vector<Produit *> panier_;
+    GestionnaireProduits * panier_;
 
   private:
     unsigned int codeClient_;
