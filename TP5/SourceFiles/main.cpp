@@ -180,7 +180,7 @@ int main()
     julie.ajouterPro
 		duit(&nem);   // produit soldé
     tests.push_back(julie.obtenirPanier()->obtenirConteneur().size() == 5);
-
+	
     // TEST 28 : ajouter le produit au fournisseur doit l'ajouter au catalogue
     tests.push_back(martine.obtenirCatalogue()->obtenirConteneur().size() == 2 &&
                     martine.obtenirCatalogue()->obtenirConteneur().find(chaussures.obtenirReference())->second->obtenirNom() == "chaussures" && // normal
@@ -273,10 +273,10 @@ int main()
 
 	// TEST 51 : obtenir un vector avec des produit qui ont des prix comprix entre 200 et 2000
 	vector<pair<int, Produit*>> intervalleProduit = julie.obtenirPanier()->obtenirProduitsEntre(20, 2000);
-	/*for (int i = 0; i < intervalleProduit.size(); i++) {
+	for (int i = 0; i < intervalleProduit.size(); i++) {
 		cout << "asdfljshfgkjsh" << endl;
 		intervalleProduit[i].second->afficher();
-	}*/
+	}
 	tests.push_back(intervalleProduit.size() == 2 &&
 		intervalleProduit[0].second->obtenirPrix() >= 20.0 &&
 		intervalleProduit[intervalleProduit.size() - 1].second->obtenirPrix() <= 2000.0);
@@ -294,7 +294,7 @@ int main()
     samuel.afficherCatalogue();
     mina.afficherCatalogue();
     poly.afficherProfils();
-
+	
     cout << "TESTS" << endl;
     for (unsigned int i = 0; i < tests.size(); i++)
     {
