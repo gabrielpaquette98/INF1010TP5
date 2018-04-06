@@ -26,8 +26,15 @@ public:
 		return conteneur_;
 	}
 
+	void ajouter(T* element)
+	{
+		A foncteurAjout(conteneur_);
+		foncteurAjout(element);
+	}
+	/*
 	void ajouter(A* element) {
 
+		
 		switch (typeid(A)) {
 
 		case typeid(Usager) :
@@ -38,17 +45,23 @@ public:
 
 		case typeid(Produit) :
 			AjouterProduit foncteurAjoutProduit(conteneur_);
-			const Produit* produit* = dynamic_cast<Produit*>(element);
+			const Produit* produit = dynamic_cast<Produit*>(element);
 			foncteurAjoutProduit(produit);
 			break;
 
 		default:
 			break;
-
+			
 		}
 
-	}
+	}*/
 
+	void supprimer(T* element)
+	{
+		A foncteurRetrait(conteneur_);
+		foncteurRetrait(element);
+	}
+	/*
 	void supprimer(S* element) {
 
 		switch (typeid(S)) {
@@ -71,7 +84,7 @@ public:
 		}
 
 	}
-
+	*/
 	template<typename Predicate>
 	void pourChaqueElement(Predicate foncteur) {
 		
