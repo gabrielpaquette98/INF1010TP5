@@ -55,7 +55,7 @@ void Client::modifierCodeClient(unsigned int codeClient)
 
 void Client::enleverProduit(Produit *produit)
 {
-	// TODO : À modifier
+	// TODO : À verifier
 	panier_->supprimer(produit);
 }
 
