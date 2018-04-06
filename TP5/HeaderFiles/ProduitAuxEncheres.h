@@ -16,7 +16,7 @@ class ProduitAuxEncheres : public Produit
                        double prix = 0.0);
 
     virtual double obtenirPrixInitial() const;
-    Client *obtenirEncherisseur() const;
+    Client* obtenirEncherisseur() const;
     virtual void afficher() const;
 
     void modifierPrixInitial(double prixInitial);
@@ -25,7 +25,7 @@ class ProduitAuxEncheres : public Produit
 
   private:
     double prixInitial_;
-    Client *encherisseur_;
+    Client* encherisseur_;
 };
 
 #endif
