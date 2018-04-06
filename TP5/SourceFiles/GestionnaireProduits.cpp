@@ -5,6 +5,7 @@
 *******************************************/
 
 #include "../HeaderFiles/GestionnaireProduits.h"
+#include "../HeaderFiles/ProduitAuxEncheres.h"
 #include <functional>
 
 GestionnaireProduits::GestionnaireProduits() {

@@ -11,7 +11,7 @@
 
 #include "./GestionnaireGenerique.h"
 #include "./Produit.h"
-#include "./ProduitAuxEncheres.h"
+
 #include "./ProduitSolde.h"
 #include <map>
 #include <vector>
