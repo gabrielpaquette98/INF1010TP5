@@ -19,7 +19,7 @@ public:
 	FoncteurEgal(T* t) 
 		: t_(t) {};
 	bool operator()(pair<int, T*> paire) { return paire.second == t_ };
-	bool operator()(T* pointeur) { return pointeur == t_ }
+	bool operator()(T* pointeur) { return pointeur == t_ };
 private:
 	T* t_;
 };
@@ -41,9 +41,9 @@ class FoncteurDiminuerPourcent
 public:
 	FoncteurDiminuerPourcent(int pourcentage) 
 		: pourcentage_(pourcentage) {};
-	void operator()(const pair<int, Produit*>& p) 
+	void operator()(pair<int, Produit*>& p) 
 	{ 
-		p.second->modifierPrix(p.second->obtenirPrix * ((100 - pourcentage_) / 100.0)); 
+		p.second->modifierPrix(p.second->obtenirPrix() * ((100 - pourcentage_) / 100.0)); 
 	}
 private:
 	int pourcentage_;
