@@ -69,66 +69,10 @@ c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\produitauxencheres.h
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\produitauxencheres.h(28): error C2143: syntax error: missing ';' before '*'
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\produitauxencheres.h(28): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\produitauxencheres.h(28): error C2238: unexpected token(s) preceding ';'
-c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\gestionnaireusagers.cpp(31): error C2660: 'ProduitAuxEncheres::mettreAJourEnchere': function does not take 2 arguments
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\gestionnaireusagers.cpp(27): error C2660: 'ProduitAuxEncheres::mettreAJourEnchere': function does not take 2 arguments
   main.cpp
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(46): error C3867: 'Produit::obtenirPrix': non-standard syntax; use '&' to create a pointer to member
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(46): error C2296: '*': illegal, left operand has type 'double (__cdecl Produit::* )(void) const'
-c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(43): error C2664: 'void GestionnaireGenerique<Usager,std::set<Usager *,std::less<_Kty>,std::allocator<_Kty>>,AjouterUsager,SupprimerUsager>::ajouter(A *)': cannot convert argument 1 from 'Client *' to 'AjouterUsager *'
-          with
-          [
-              _Kty=Usager *,
-              A=AjouterUsager
-          ]
-  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(43): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
-c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(44): error C2664: 'void GestionnaireGenerique<Usager,std::set<Usager *,std::less<_Kty>,std::allocator<_Kty>>,AjouterUsager,SupprimerUsager>::ajouter(A *)': cannot convert argument 1 from 'Client *' to 'AjouterUsager *'
-          with
-          [
-              _Kty=Usager *,
-              A=AjouterUsager
-          ]
-  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(44): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
-c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(45): error C2664: 'void GestionnaireGenerique<Usager,std::set<Usager *,std::less<_Kty>,std::allocator<_Kty>>,AjouterUsager,SupprimerUsager>::ajouter(A *)': cannot convert argument 1 from 'Fournisseur *' to 'AjouterUsager *'
-          with
-          [
-              _Kty=Usager *,
-              A=AjouterUsager
-          ]
-  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(45): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
-c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(46): error C2664: 'void GestionnaireGenerique<Usager,std::set<Usager *,std::less<_Kty>,std::allocator<_Kty>>,AjouterUsager,SupprimerUsager>::ajouter(A *)': cannot convert argument 1 from 'Fournisseur *' to 'AjouterUsager *'
-          with
-          [
-              _Kty=Usager *,
-              A=AjouterUsager
-          ]
-  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(46): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
-c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(47): error C2664: 'void GestionnaireGenerique<Usager,std::set<Usager *,std::less<_Kty>,std::allocator<_Kty>>,AjouterUsager,SupprimerUsager>::ajouter(A *)': cannot convert argument 1 from 'Client *' to 'AjouterUsager *'
-          with
-          [
-              _Kty=Usager *,
-              A=AjouterUsager
-          ]
-  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(47): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
-c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(48): error C2664: 'void GestionnaireGenerique<Usager,std::set<Usager *,std::less<_Kty>,std::allocator<_Kty>>,AjouterUsager,SupprimerUsager>::ajouter(A *)': cannot convert argument 1 from 'ClientPremium *' to 'AjouterUsager *'
-          with
-          [
-              _Kty=Usager *,
-              A=AjouterUsager
-          ]
-  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(48): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
-c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(49): error C2664: 'void GestionnaireGenerique<Usager,std::set<Usager *,std::less<_Kty>,std::allocator<_Kty>>,AjouterUsager,SupprimerUsager>::ajouter(A *)': cannot convert argument 1 from 'Fournisseur *' to 'AjouterUsager *'
-          with
-          [
-              _Kty=Usager *,
-              A=AjouterUsager
-          ]
-  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(49): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
-c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(50): error C2664: 'void GestionnaireGenerique<Usager,std::set<Usager *,std::less<_Kty>,std::allocator<_Kty>>,AjouterUsager,SupprimerUsager>::ajouter(A *)': cannot convert argument 1 from 'ClientPremium *' to 'AjouterUsager *'
-          with
-          [
-              _Kty=Usager *,
-              A=AjouterUsager
-          ]
-  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(50): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(127): error C2247: 'GestionnaireGenerique<Produit,std::multimap<int,Produit *,std::less<int>,std::allocator<std::pair<const _Kty,_Ty>>>,AjouterProduit,SupprimerProduit>::obtenirConteneur' not accessible because 'GestionnaireProduits' uses 'private' to inherit from 'GestionnaireGenerique<Produit,std::multimap<int,Produit *,std::less<int>,std::allocator<std::pair<const _Kty,_Ty>>>,AjouterProduit,SupprimerProduit>'
           with
           [
@@ -921,7 +865,62 @@ c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(223): error
           [
               _Ty=Produit *
           ]
-c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(223): fatal error C1003: error count exceeds 100; stopping compilation
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(223): error C2228: left of '.size' must have class/struct/union
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(224): error C2819: type 'std::vector<Produit *,std::allocator<_Ty>>' does not have an overloaded member 'operator ->'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\fournisseur.h(19): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(224): note: did you intend to use '.' instead?
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(224): error C2039: 'obtenirConteneur': is not a member of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\fournisseur.h(19): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(224): error C2228: left of '.size' must have class/struct/union
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(225): error C2819: type 'std::vector<Produit *,std::allocator<_Ty>>' does not have an overloaded member 'operator ->'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\fournisseur.h(19): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(225): note: did you intend to use '.' instead?
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(225): error C2039: 'obtenirConteneur': is not a member of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\fournisseur.h(19): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(225): error C2228: left of '.size' must have class/struct/union
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(269): error C2819: type 'std::vector<Produit *,std::allocator<_Ty>>' does not have an overloaded member 'operator ->'
+          with
+          [
+              _Ty=Produit *
+          ]
+  c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\fournisseur.h(19): note: see declaration of 'std::vector<Produit *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Produit *
+          ]
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\main.cpp(269): fatal error C1003: error count exceeds 100; stopping compilation
   Produit.cpp
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(46): error C3867: 'Produit::obtenirPrix': non-standard syntax; use '&' to create a pointer to member
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(46): error C2296: '*': illegal, left operand has type 'double (__cdecl Produit::* )(void) const'
@@ -934,4 +933,7 @@ c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\client.h(34): error 
   ProduitAuxEncheres.cpp
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(46): error C3867: 'Produit::obtenirPrix': non-standard syntax; use '&' to create a pointer to member
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(46): error C2296: '*': illegal, left operand has type 'double (__cdecl Produit::* )(void) const'
+  ProduitSolde.cpp
+  Solde.cpp
+  Usager.cpp
   Generating Code...
