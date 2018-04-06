@@ -31,7 +31,7 @@ public:
 	void afficher() const;
 	double obtenirTotalAPayer() const;
 	double obtenirTotalApayerPremium() const;
-	Produit* trouverProduitPlusCher() const;
+	Produit trouverProduitPlusCher() const;
 	vector<pair<int, Produit*>> obtenirProduitsEntre(double min, double max) const;
 	Produit* obtenirProduitSuivant(Produit* produit) const;
 
