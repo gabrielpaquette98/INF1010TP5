@@ -19,9 +19,9 @@ void GestionnaireProduits::reinitialiserClient() {
 	std::for_each(
 		conteneur_.begin(),
 		conteneur_.end(),
-		[](Produit* produit) { 
-			if (dynamic_cast<ProduitAuxEncheres*>(produit) != nullptr) {
-				ProduitAuxEncheres produitAReinit = *dynamic_cast<ProduitAuxEncheres*>(produit);
+		[](pair<int, Produit*> produit) {
+			if (dynamic_cast<ProduitAuxEncheres*>(produit.second) != nullptr) {
+				ProduitAuxEncheres produitAReinit = *dynamic_cast<ProduitAuxEncheres*>(produit.second);
 				produitAReinit.modifierEncherisseur(nullptr);
 				produitAReinit.modifierPrix(produitAReinit.obtenirPrixInitial());
 			}
@@ -34,7 +34,7 @@ void GestionnaireProduits::reinitialiserFournisseur() {
 	std::for_each(
 		conteneur_.begin(),
 		conteneur_.end(),
-		[](Produit* produit) { (*produit).modifierFournisseur(nullptr); }
+		[](pair<int, Produit*> produit) { produit.second->modifierFournisseur(nullptr); }
 	);
 }
 
@@ -43,17 +43,17 @@ void GestionnaireProduits::afficher() const {
 	std::for_each(
 		conteneur_.begin(),
 		conteneur_.end(),
-		[](Produit* produit) {
-			if (dynamic_cast<ProduitAuxEncheres*>(produit) != nullptr) {
-				ProduitAuxEncheres produitAafficher = *dynamic_cast<ProduitAuxEncheres*>(produit);
+		[](pair<int, Produit*> produit) {
+			if (dynamic_cast<ProduitAuxEncheres*>(produit.second) != nullptr) {
+				ProduitAuxEncheres produitAafficher = *dynamic_cast<ProduitAuxEncheres*>(produit.second);
 				produitAafficher.afficher();
 			}
-			else if (dynamic_cast<ProduitSolde*>(produit) != nullptr) {
-				ProduitSolde produitAafficher = *dynamic_cast<ProduitSolde*>(produit);
+			else if (dynamic_cast<ProduitSolde*>(produit.second) != nullptr) {
+				ProduitSolde produitAafficher = *dynamic_cast<ProduitSolde*>(produit.second);
 				produitAafficher.afficher();
 			}
 			else {
-				produit->afficher();
+				produit.second->afficher();
 			}
 		}
 	);
@@ -65,8 +65,8 @@ double GestionnaireProduits::obtenirTotalAPayer() const {
 	std::for_each(
 		conteneur_.begin(),
 		conteneur_.end(),
-		[&](Produit* produit) {
-			montantTotal += (*produit).obtenirPrix();
+		[&](pair<int, Produit*> produit) {
+		montantTotal += produit.second->obtenirPrix();
 		}
 	);
 	return montantTotal;
@@ -78,26 +78,24 @@ double GestionnaireProduits::obtenirTotalApayerPremium() const {
 	std::for_each(
 		conteneur_.begin(),
 		conteneur_.end(),
-		[&](Produit* produit) {
-			if ((*produit).obtenirPrix() > RABAIS_PAR_PRODUIT) {
-				montantTotal += (*produit).obtenirPrix() - RABAIS_PAR_PRODUIT;
+		[&](pair<int, Produit*> produit) {
+			if (produit.second->obtenirPrix() > RABAIS_PAR_PRODUIT) {
+				montantTotal += produit.second->obtenirPrix() - RABAIS_PAR_PRODUIT;
 			}
 		}
 	);
 	return montantTotal;
 }
 
-Produit GestionnaireProduits::trouverProduitPlusCher() const {
-	// TODO utiliser max_element avec une fonction lambda a l'interieur
-	// TODO se renseigner sur comment comparer deux objets dans une fonction lambda
+Produit* GestionnaireProduits::trouverProduitPlusCher() const {
+	// TODO verifier
 	std::max_element(
 		conteneur_.begin(),
 		conteneur_.end(),
-		[&](Produit* produit) {
-			//...
+		[](pair<int, Produit*> premierPoduit, pair<int, Produit*> secondProduit) {
+			return premierPoduit.second->obtenirPrix() < secondProduit.second->obtenirPrix();
 		}
 	);
-	//...
 }
 
 vector<pair<int, Produit*>> GestionnaireProduits::obtenirProduitsEntre(double min, double max) const {
@@ -110,7 +108,7 @@ vector<pair<int, Produit*>> GestionnaireProduits::obtenirProduitsEntre(double mi
 	);
 }
 
-Produit* GestionnaireProduits::obtenirProduitSuivant(Produit* produit) const {
+/*Produit* GestionnaireProduits::obtenirProduitSuivant(Produit* produit) const {
 	// TODO utiliser bind dans un find_if
 	std::find_if(
 		conteneur_.begin(),
@@ -118,4 +116,4 @@ Produit* GestionnaireProduits::obtenirProduitSuivant(Produit* produit) const {
 		//...
 	);
 	//...
-}
+}*/

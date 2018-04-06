@@ -24,9 +24,14 @@ double GestionnaireUsagers::obtenirChiffreAffaires() const {
 	);
 };
 
-// TODO verifier si cette methode a vraiment sa place dans GestionnaireUsagers
-void GestionnaireUsagers::encherir(Client* usager, ProduitAuxEncheres* produit, double montant) const {
-	//...
+// TODO verifier
+void GestionnaireUsagers::encherir(Client* client, ProduitAuxEncheres* produit, double montant) const {
+	if (montant <= produit->obtenirPrix()) {
+		return;
+	}
+	else {
+		produit->mettreAJourEnchere(client, montant);
+	}
 };
 
 void GestionnaireUsagers::reinitialiser() {

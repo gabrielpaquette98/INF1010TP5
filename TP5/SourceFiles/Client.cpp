@@ -32,30 +32,21 @@ GestionnaireProduits* Client::obtenirPanier() const
 double Client::obtenirTotalAPayer() const
 {
 	return panier_->obtenirTotalAPayer();
-	// TODO : À modifier
-    /*double montant = 0;
-    for (unsigned int i = 0; i < panier_.size(); i++)
-        montant += panier_[i]->obtenirPrix();
-    return montant;*/
 }
 
 void Client::afficherPanier() const
 {
-	// TODO : À modifier
     cout << "PANIER (de " << obtenirNom() << ")"
          << "\n";
 	panier_->afficher();
-    /*for (unsigned int i = 0; i < panier_.size(); i++)
-        panier_[i]->afficher();
-    cout << endl;*/
 }
 
 void Client::afficher() const
 {
 	// TODO : À modifier
     /*Usager::afficher();
-    cout << "\t\tcode client:\t" << codeClient_ << endl
-         << "\t\tpanier:\t\t" << panier_.size() << " elements" << endl;*/
+	cout << "\t\tcode client:\t" << codeClient_ << endl
+		<< "\t\tpanier:\t\t" << panier_->obtenirConteneur().size() << " elements" << endl;*/
 }
 
 void Client::modifierCodeClient(unsigned int codeClient)
@@ -66,7 +57,7 @@ void Client::modifierCodeClient(unsigned int codeClient)
 void Client::enleverProduit(Produit *produit)
 {
 	// TODO : À modifier
-    for (unsigned int i = 0; i < panier_.size(); i++)
+    /*for (unsigned int i = 0; i < panier_.size(); i++)
     {
         if (panier_[i] == produit)
         {
@@ -74,16 +65,16 @@ void Client::enleverProduit(Produit *produit)
             panier_.pop_back();
             return;
         }
-    }
+    }*/
 }
 
 void Client::ajouterProduit(Produit *produit)
 {
 	// TODO : À modifier
-    for (unsigned int i = 0; i < panier_.size(); i++)
+    /*for (unsigned int i = 0; i < panier_.size(); i++)
         if (panier_[i] == produit)
             return;
-    panier_.push_back(produit);
+    panier_.push_back(produit);*/
 }
 
 void Client::reinitialiser()
