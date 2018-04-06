@@ -1,6 +1,12 @@
 # Visual Studio files
 .vs/
 
+# Debug Directories
+./TP5/x64
+./TP5/.vs/
+./TP5/TP5/x64
+
+
 #VS Code files
 .vscode/
 
