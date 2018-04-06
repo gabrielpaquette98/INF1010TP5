@@ -18,7 +18,8 @@ class FoncteurEgal
 public:
 	FoncteurEgal(T* t) 
 		: t_(t) {};
-	bool operator()(pair<int, T*> p) { return p.second == t_ };
+	bool operator()(pair<int, T*> paire) { return paire.second == t_ };
+	bool operator()(T* pointeur) { return pointeur == t_ }
 private:
 	T* t_;
 };
@@ -71,7 +72,7 @@ public:
 		: multimap_(m) {};
 	multimap<int, Produit*> & operator()(Produit* p) 
 	{ 
-		multimap_.insert(pair<int, Produit*>(p->obtenirReference(), p));
+		multimap_.insert(make_pair(p->obtenirReference(), p));
 		return multimap_;
 	};
 private:
@@ -84,10 +85,9 @@ class SupprimerProduit
 public:
 	SupprimerProduit(multimap<int, Produit*> & m) 
 		: multimap_(m) {};
-	multimap<int, Produit*> & operator()(Produit* p) 
-	{ 
-		FoncteurEgal<Produit> foncteurProduitEgal(p); 
-		multimap<int, Produit*>::iterator itProduitTrouve = find_if(multimap_.begin(), multimap_.end(), foncteurProduitEgal());
+	multimap<int, Produit*> & operator()(Produit* produit) 
+	{  
+		multimap<int, Produit*>::iterator itProduitTrouve = find_if(multimap_.begin(), multimap_.end(), FoncteurEgal<Produit>(produit));
 		if (itProduitTrouve != multimap_.end())
 			multimap_.erase(itProduitTrouve);
 		return multimap_;
@@ -118,9 +118,8 @@ public:
 	SupprimerUsager(set<Usager*> & set) 
 		: set_(set) {  };
 	set<Usager*> & operator()(Usager* usager) 
-	{ 
-		FoncteurEgal<Usager> foncteurUsagerEgal(pair<int, Usager*> p(0, usager));
-		set<Usager*>::iterator itUsagerTrouve = find_if(set_.begin(), set_.end(), foncteurUsagerEgal());
+	{
+		set<Usager*>::iterator itUsagerTrouve = find_if(set_.begin(), set_.end(), FoncteurEgal<Usager>(usager));
 		if (itUsagerTrouve != set_.end())
 			set_.erase(itUsagerTrouve);
 		return set_;
