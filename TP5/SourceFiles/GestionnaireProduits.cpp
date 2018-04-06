@@ -5,6 +5,7 @@
 *******************************************/
 
 #include "../HeaderFiles/GestionnaireProduits.h"
+#include <functional>
 
 GestionnaireProduits::GestionnaireProduits() {
 	// ne rien faire
@@ -79,22 +80,20 @@ Produit GestionnaireProduits::trouverProduitPlusCher() const {
 	return *(it->second);
 }
 
+// TODO verifier
 vector<pair<int, Produit*>> GestionnaireProduits::obtenirProduitsEntre(double min, double max) const {
 	vector<pair<int, Produit*>> resultats;
-	copy_if(
-		conteneur_.begin(),
-		conteneur_.end(),
-		std::back_inserter(resultats),
-		FoncteurIntervalle(min, max)
-	);
+	copy_if(conteneur_.begin(), 
+		conteneur_.end(), 
+		back_inserter(resultats), 
+		FoncteurIntervalle(min, max));
 }
 
-/*Produit* GestionnaireProduits::obtenirProduitSuivant(Produit* produit) const {
-	// TODO utiliser bind dans un find_if
-	std::find_if(
-		conteneur_.begin(),
-		conteneur_.end(),
-		//...
-	);
-	//...
-}*/
+// TODO verifier
+Produit* GestionnaireProduits::obtenirProduitSuivant(Produit* produit) const {
+	auto it = find_if(conteneur_.begin(), 
+		conteneur_.end(), 
+		bind(FoncteurEgal<Produit>(produit)));
+	auto itProduitSuivant = it++;
+	return itProduitSuivant->second;
+}
