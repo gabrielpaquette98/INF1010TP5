@@ -83,21 +83,17 @@ Produit GestionnaireProduits::trouverProduitPlusCher() const {
 // TODO verifier
 vector<pair<int, Produit*>> GestionnaireProduits::obtenirProduitsEntre(double min, double max) const {
 	vector<pair<int, Produit*>> resultats;
-	copy_if(
-		conteneur_.begin(),
-		conteneur_.end(),
-		back_inserter(resultats),
-		FoncteurIntervalle(min, max)
-	);
+	copy_if(conteneur_.begin(), 
+		conteneur_.end(), 
+		back_inserter(resultats), 
+		FoncteurIntervalle(min, max));
 }
 
 // TODO verifier
 Produit* GestionnaireProduits::obtenirProduitSuivant(Produit* produit) const {
-		auto it = find_if(
-		conteneur_.begin(),
-		conteneur_.end(),
-		bind(FoncteurEgal<Produit>(produit))
-	);
+	auto it = find_if(conteneur_.begin(), 
+		conteneur_.end(), 
+		bind(FoncteurEgal<Produit>(produit)));
 	auto itProduitSuivant = it++;
 	return itProduitSuivant->second;
 }
