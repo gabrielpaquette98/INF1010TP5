@@ -123,7 +123,18 @@ c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\produitauxencheres.h
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\produitauxencheres.h(28): error C2143: syntax error: missing ';' before '*'
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\produitauxencheres.h(28): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\produitauxencheres.h(28): error C2238: unexpected token(s) preceding ';'
-c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\gestionnaireusagers.cpp(33): error C2660: 'ProduitAuxEncheres::mettreAJourEnchere': function does not take 2 arguments
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\gestionnaireusagers.cpp(20): error C2839: invalid return type 'Usager *const *' for overloaded 'operator ->'
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\gestionnaireusagers.cpp(20): error C2039: 'obtenirTotalAPayer': is not a member of 'std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>'
+          with
+          [
+              _Ty=Usager *
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.13.26128\include\xtree(562): note: see declaration of 'std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>'
+          with
+          [
+              _Ty=Usager *
+          ]
+c:\users\vitto\documents\inf1010\inf1010tp5\tp5\sourcefiles\gestionnaireusagers.cpp(35): error C2660: 'ProduitAuxEncheres::mettreAJourEnchere': function does not take 2 arguments
   main.cpp
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(45): error C3867: 'Produit::obtenirPrix': non-standard syntax; use '&' to create a pointer to member
 c:\users\vitto\documents\inf1010\inf1010tp5\tp5\headerfiles\foncteur.h(45): error C2296: '*': illegal, left operand has type 'double (__cdecl Produit::* )(void) const'
