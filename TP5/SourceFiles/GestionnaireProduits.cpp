@@ -89,7 +89,6 @@ vector<pair<int, Produit*>> GestionnaireProduits::obtenirProduitsEntre(double mi
 		FoncteurIntervalle(min, max));
 }
 
-// TODO verifier
 Produit* GestionnaireProduits::obtenirProduitSuivant(Produit* produit) const {
 	auto it = find_if(conteneur_.begin(), 
 		conteneur_.end(), 
