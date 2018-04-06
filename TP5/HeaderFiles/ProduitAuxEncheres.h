@@ -20,8 +20,8 @@ class ProduitAuxEncheres : public Produit
     virtual void afficher() const;
 
     void modifierPrixInitial(double prixInitial);
-    void modifierEncherisseur(Client* encherisseur);
-    void mettreAJourEnchere(Client *encherisseur, double nouveauPrix);
+    void modifierEncherisseur(Client * encherisseur);
+    void mettreAJourEnchere(Client * encherisseur, double nouveauPrix);
 
   private:
     double prixInitial_;

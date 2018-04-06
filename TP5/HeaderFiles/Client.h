@@ -5,7 +5,7 @@
 #include <vector>
 #include "Usager.h"
 #include "Produit.h"
-#include "./GestionnaireProduits.h"
+#include "GestionnaireProduits.h"
 
 using namespace std;
 
