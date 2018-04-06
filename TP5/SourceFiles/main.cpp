@@ -177,8 +177,7 @@ int main()
 
     // TEST 27 : idem pour client premium
     julie.ajouterProduit(&stylo); // produit normal
-    julie.ajouterPro
-		duit(&nem);   // produit soldé
+    julie.ajouterProduit(&nem);   // produit soldé
     tests.push_back(julie.obtenirPanier()->obtenirConteneur().size() == 5);
 	
     // TEST 28 : ajouter le produit au fournisseur doit l'ajouter au catalogue
