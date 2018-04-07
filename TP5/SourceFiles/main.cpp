@@ -285,15 +285,15 @@ int main()
 	tests.push_back(julie.obtenirPanier()->obtenirProduitSuivant(&montre)->obtenirNom() == "nem crevettes" &&
 					julie.obtenirPanier()->obtenirProduitSuivant(&montre)->obtenirReference() > 6 &&
 					julie.obtenirPanier()->obtenirProduitSuivant(&montre) == &nem);
-
+	*/
     // fonctions d'affichage
-    /*gaspard.afficherPanier();
+    gaspard.afficherPanier();
     julie.afficherPanier();
     ratus.afficherPanier();
     martine.afficherCatalogue();
     samuel.afficherCatalogue();
     mina.afficherCatalogue();
-    poly.afficherProfils();*/
+    poly.afficherProfils();
 	
     cout << "TESTS" << endl;
     for (unsigned int i = 0; i < tests.size(); i++)
