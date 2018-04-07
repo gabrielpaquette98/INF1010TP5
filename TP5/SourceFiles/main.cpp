@@ -194,7 +194,7 @@ int main()
                     martine.obtenirCatalogue()->obtenirConteneur().find(chaussures.obtenirReference())->second->obtenirNom() == "chaussures" &&
                     martine.obtenirCatalogue()->obtenirConteneur().find(violoncelle.obtenirReference())->second->obtenirNom() == "violoncelle" &&
                     martine.obtenirCatalogue()->obtenirConteneur().find(montre.obtenirReference())->second->obtenirNom() == "montre");
-    /*// TEST 31 : modifier le fournisseur d'un produit doit retirer le produit du catalogue précédent
+    // TEST 31 : modifier le fournisseur d'un produit doit retirer le produit du catalogue précédent
     tests.push_back(mina.obtenirCatalogue()->obtenirConteneur().size() == 0);
     // TEST 32 : enlever un produit doit mettre l'attribut fournisseur à jour
     martine.enleverProduit(&montre);
@@ -208,7 +208,7 @@ int main()
     tests.push_back(martine.obtenirCatalogue()->obtenirConteneur().size() == 2 &&
                     martine.obtenirCatalogue()->obtenirConteneur().find(chaussures.obtenirReference())->second->obtenirNom() == "chaussures" &&
                     martine.obtenirCatalogue()->obtenirConteneur().find(violoncelle.obtenirReference())->second->obtenirNom() == "violoncelle");
-
+	
     // TEST 35 : réinitialiser doit vider le panier de tous les clients
     poly.reinitialiser();
     tests.push_back(gaspard.obtenirPanier()->obtenirConteneur().size() == 0 &&
@@ -228,7 +228,7 @@ int main()
     tests.push_back(stylo.obtenirFournisseur() == nullptr &&
                     sculpture.obtenirFournisseur() == nullptr &&
                     nem.obtenirFournisseur() == nullptr);
-
+	
     // TEST 40 : le chiffre d'affaires devrait être nul après une réinitialisation
     tests.push_back(poly.obtenirChiffreAffaires() == 0.0);
     // TEST 41 : le total à payer des clients normaux doit sommer les prix dans le panier
@@ -258,12 +258,12 @@ int main()
     poly.ajouter(&martine);
 	// TEST 48 :
     tests.push_back(poly.obtenirConteneur().size() == 8);
-
+	/*
 	// TEST 49 : trouver le produit le plus chère doit fonctionner selon les test suivants
 	tests.push_back(gaspard.trouverProduitPlusCher()->obtenirReference() == 6 &&
 					samuel.trouverProduitPlusCher()->obtenirReference() == 6 &&
 					ratus.trouverProduitPlusCher() == nullptr);
-
+	
 	// TEST 50 : diminuer le prix des produits doit mettre a jour tous les produits du fournisseur
 	samuel.diminuerPrix(10);
 	//cout << samuel.obtenirCatalogue()->obtenirConteneur().find(6)->second->obtenirPrix() << endl;

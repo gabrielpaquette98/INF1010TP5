@@ -25,6 +25,7 @@ void GestionnaireProduits::reinitialiserClient() {
 			produitAReinit.modifierPrix(produitAReinit.obtenirPrixInitial());
 		}
 	}
+	conteneur_.clear();
 }
 
 void GestionnaireProduits::reinitialiserFournisseur() {

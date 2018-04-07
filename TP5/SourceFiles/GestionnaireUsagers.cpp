@@ -31,8 +31,7 @@ void GestionnaireUsagers::encherir(Client* client, ProduitAuxEncheres* produit, 
 
 void GestionnaireUsagers::reinitialiser() {
 	for (auto it = conteneur_.begin(); it != conteneur_.end(); it++) {
-		Usager* usager = *it;
-		usager->reinitialiser();
+		(*it)->reinitialiser();
 	}
 };
 
