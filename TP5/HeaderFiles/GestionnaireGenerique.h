@@ -58,7 +58,7 @@ public:
 
 	void supprimer(T* element)
 	{
-		A foncteurRetrait(conteneur_);
+		S foncteurRetrait(conteneur_);
 		foncteurRetrait(element);
 	}
 	/*
