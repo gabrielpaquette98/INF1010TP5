@@ -39,24 +39,24 @@ protected:
 #endif // !GESTIONNAIREGENERIQUE_H
 
 template<typename T, typename C, typename A, typename S>
-inline C GestionnaireGenerique<T, C, A, S>::obtenirConteneur() {
+C GestionnaireGenerique<T, C, A, S>::obtenirConteneur() {
 	return conteneur_;
 }
 
 template<typename T, typename C, typename A, typename S>
-inline void GestionnaireGenerique<T, C, A, S>::ajouter(T* element) {
+void GestionnaireGenerique<T, C, A, S>::ajouter(T* element) {
 	A foncteurAjout(conteneur_);
 	foncteurAjout(element);
 }
 
 template<typename T, typename C, typename A, typename S>
-inline void GestionnaireGenerique<T, C, A, S>::supprimer(T* element) {
+void GestionnaireGenerique<T, C, A, S>::supprimer(T* element) {
 	S foncteurRetrait(conteneur_);
 	foncteurRetrait(element);
 }
 
 template<typename T, typename C, typename A, typename S>
 template<typename Predicate>
-inline void GestionnaireGenerique<T, C, A, S>::pourChaqueElement(Predicate foncteur) {
+void GestionnaireGenerique<T, C, A, S>::pourChaqueElement(Predicate foncteur) {
 	std::for_each(conteneur_.begin(), conteneur_.end(), foncteur);
 }
