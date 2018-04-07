@@ -2,13 +2,13 @@
 #include <iostream>
 
 Fournisseur::Fournisseur()
-    : Usager()
+    : Usager(), catalogue_(new GestionnaireProduits())
 {
 }
 
 Fournisseur::Fournisseur(const string &nom, const string &prenom, int identifiant,
                          const string &codePostal)
-    : Usager(nom, prenom, identifiant, codePostal), catalogue_(nullptr)
+    : Usager(nom, prenom, identifiant, codePostal), catalogue_(new GestionnaireProduits())
 {
 	// TODO : À modifier
 }

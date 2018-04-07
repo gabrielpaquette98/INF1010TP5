@@ -35,17 +35,7 @@ void GestionnaireProduits::reinitialiserFournisseur() {
 
 void GestionnaireProduits::afficher() const {
 	for (auto it = conteneur_.begin(); it != conteneur_.end(); it++) {
-		if (dynamic_cast<ProduitAuxEncheres*>(it->second) != nullptr) {
-			ProduitAuxEncheres produitAafficher = *dynamic_cast<ProduitAuxEncheres*>(it->second);
-			produitAafficher.afficher();
-		}
-		else if (dynamic_cast<ProduitSolde*>(it->second) != nullptr) {
-			ProduitSolde produitAafficher = *dynamic_cast<ProduitSolde*>(it->second);
-			produitAafficher.afficher();
-		}
-		else {
-			it->second->afficher();
-		}
+		it->second->afficher();
 	}
 }
 

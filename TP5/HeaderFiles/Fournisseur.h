@@ -4,7 +4,6 @@
 #include <string>
 #include <vector>
 #include "./Usager.h"
-#include "./Produit.h"
 #include "./GestionnaireProduits.h"
 
 using namespace std;

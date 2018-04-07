@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class Fournisseur; // Cause une segfault
+class Fournisseur;
 
 class Produit
 {
