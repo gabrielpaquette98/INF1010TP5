@@ -122,11 +122,12 @@ int main()
                     nem.obtenirFournisseur() == &samuel &&
                     nem.obtenirPrix() == 2 &&
                     nem.obtenirPourcentageRabais() == 0);
-	/*
+	
     // TEST 13 : une surenchère doit être strictement supérieure à l'offre précédente
     poly.encherir(&julie, &violoncelle, 5000.0);
-    tests.push_back(julie.obtenirPanier()->obtenirConteneur().size() == 0);
-    poly.encherir(&gaspard, &violoncelle, 6000.0);
+	//multimap<int, Produit*> conteneurDeJulie = julie.obtenirPanier()->obtenirConteneur(); BUG = obtenirConteneur
+    //tests.push_back(julie.obtenirPanier()->obtenirConteneur().size() == 0); BUG
+    /*poly.encherir(&gaspard, &violoncelle, 6000.0);
     poly.encherir(&julie, &violoncelle, 6000.0);
 	// TEST 14
     tests.push_back(julie.obtenirPanier()->obtenirConteneur().size() == 0);
