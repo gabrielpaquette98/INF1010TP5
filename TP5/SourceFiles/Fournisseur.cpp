@@ -52,3 +52,11 @@ void Fournisseur::enleverProduit(Produit *produit)
 	// TODO : À modifier
 	catalogue_->supprimer(produit);
 }
+
+Produit* Fournisseur::trouverProduitPlusCher() const {
+	return catalogue_->trouverProduitPlusCher();
+}
+
+void Fournisseur::diminuerPrix(int pourcent) {
+	//...
+}

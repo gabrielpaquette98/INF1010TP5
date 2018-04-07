@@ -71,5 +71,5 @@ void Client::reinitialiser()
 }
 
 Produit* Client::trouverProduitPlusCher() const {
-	panier_->trouverProduitPlusCher();
+	return panier_->trouverProduitPlusCher();
 }

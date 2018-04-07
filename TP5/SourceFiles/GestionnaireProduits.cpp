@@ -69,7 +69,7 @@ double GestionnaireProduits::obtenirTotalApayerPremium() const {
 	return montantTotal;
 }
 
-Produit GestionnaireProduits::trouverProduitPlusCher() const {
+Produit* GestionnaireProduits::trouverProduitPlusCher() const {
 	// TODO verifier
 	auto it = std::max_element(
 		conteneur_.begin(),
@@ -78,7 +78,7 @@ Produit GestionnaireProduits::trouverProduitPlusCher() const {
 			return premierPoduit.second->obtenirPrix() < secondProduit.second->obtenirPrix();
 		}
 	);
-	return *(it->second);
+	return (it->second);
 }
 
 // TODO verifier
@@ -88,12 +88,15 @@ vector<pair<int, Produit*>> GestionnaireProduits::obtenirProduitsEntre(double mi
 		conteneur_.end(), 
 		back_inserter(resultats), 
 		FoncteurIntervalle(min, max));
+	return resultats;
 }
 
+// TODO verifier
 Produit* GestionnaireProduits::obtenirProduitSuivant(Produit* produit) const {
-	auto it = find_if(conteneur_.begin(), 
-		conteneur_.end(), 
-		bind(FoncteurEgal<Produit>(produit)));
+	/*auto it = find_if(conteneur_.begin(),
+		conteneur_.end(),
+		bind(greater<pair<int, Produit*>>(), make_pair(produit->obtenirReference(), produit)));
 	auto itProduitSuivant = it++;
-	return itProduitSuivant->second;
+	return itProduitSuivant->second;*/
+	return produit; //temp
 }

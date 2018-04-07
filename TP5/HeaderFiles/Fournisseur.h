@@ -26,7 +26,7 @@ class Fournisseur : public Usager
 
 	// TODO : implémenter les méthodes suivantes :
 	Produit* trouverProduitPlusCher() const;
-	void DiminuerPrix(int pourcent) const;
+	void diminuerPrix(int pourcent);
 
   private:
     GestionnaireProduits* catalogue_;

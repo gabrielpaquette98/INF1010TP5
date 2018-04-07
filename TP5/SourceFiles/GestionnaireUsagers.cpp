@@ -20,6 +20,7 @@ double GestionnaireUsagers::obtenirChiffreAffaires() const {
 		Usager* usager = *it;
 		chiffreAffaires += usager->obtenirTotalAPayer();
 	}
+	return chiffreAffaires;
 };
 
 void GestionnaireUsagers::encherir(Client* client, ProduitAuxEncheres* produit, double montant) const {
