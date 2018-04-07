@@ -20,9 +20,9 @@ void GestionnaireProduits::reinitialiserClient() {
 	for (auto it = conteneur_.begin(); it != conteneur_.end(); it++)
 	{
 		if (dynamic_cast<ProduitAuxEncheres*>(it->second) != nullptr) {
-			ProduitAuxEncheres produitAReinit = *dynamic_cast<ProduitAuxEncheres*>(it->second);
-			produitAReinit.modifierEncherisseur(nullptr);
-			produitAReinit.modifierPrix(produitAReinit.obtenirPrixInitial());
+			(*dynamic_cast<ProduitAuxEncheres*>(it->second)).modifierEncherisseur(nullptr);
+			(*dynamic_cast<ProduitAuxEncheres*>(it->second))
+				.modifierPrix((*dynamic_cast<ProduitAuxEncheres*>(it->second)).obtenirPrixInitial());
 		}
 	}
 	conteneur_.clear();
