@@ -32,6 +32,7 @@ void GestionnaireProduits::reinitialiserFournisseur() {
 	for (auto it = conteneur_.begin(); it != conteneur_.end(); it++) {
 		it->second->modifierFournisseur(nullptr);
 	}
+	conteneur_.clear();
 }
 
 void GestionnaireProduits::afficher() const {
