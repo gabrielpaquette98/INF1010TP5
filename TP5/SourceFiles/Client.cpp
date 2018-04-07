@@ -5,7 +5,7 @@
 Client::Client(unsigned int codeClient)
     : Usager(),
       codeClient_(codeClient),
-	panier_(nullptr)
+	panier_(new GestionnaireProduits())
 {
 
 }
@@ -14,7 +14,7 @@ Client::Client(const string &nom, const string &prenom, int identifiant,
                const string &codePostal, unsigned int codeClient)
     : Usager(nom, prenom, identifiant, codePostal),
       codeClient_(codeClient),
-	panier_(nullptr)
+	panier_(new GestionnaireProduits())
 {
 
 }

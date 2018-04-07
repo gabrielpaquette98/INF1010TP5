@@ -125,9 +125,8 @@ int main()
 	
     // TEST 13 : une surenchère doit être strictement supérieure à l'offre précédente
     poly.encherir(&julie, &violoncelle, 5000.0);
-	//multimap<int, Produit*> conteneurDeJulie = julie.obtenirPanier()->obtenirConteneur(); BUG = obtenirConteneur
-    //tests.push_back(julie.obtenirPanier()->obtenirConteneur().size() == 0); BUG
-    /*poly.encherir(&gaspard, &violoncelle, 6000.0);
+    tests.push_back(julie.obtenirPanier()->obtenirConteneur().size() == 0); 
+    poly.encherir(&gaspard, &violoncelle, 6000.0);
     poly.encherir(&julie, &violoncelle, 6000.0);
 	// TEST 14
     tests.push_back(julie.obtenirPanier()->obtenirConteneur().size() == 0);
@@ -151,7 +150,7 @@ int main()
     tests.push_back(violoncelle.obtenirPrix() == 9000.0);
     // TEST 21 : le prix initial ne doit pas varier
     tests.push_back(violoncelle.obtenirPrixInitial() == 5000.0);
-
+	
     // TEST 22 : ajouter le produit au client doit l'ajouter au panier
     gaspard.ajouterProduit(&stylo); // produit normal
     gaspard.ajouterProduit(&nem);   // produit soldé
@@ -195,7 +194,7 @@ int main()
                     martine.obtenirCatalogue()->obtenirConteneur().find(chaussures.obtenirReference())->second->obtenirNom() == "chaussures" &&
                     martine.obtenirCatalogue()->obtenirConteneur().find(violoncelle.obtenirReference())->second->obtenirNom() == "violoncelle" &&
                     martine.obtenirCatalogue()->obtenirConteneur().find(montre.obtenirReference())->second->obtenirNom() == "montre");
-    // TEST 31 : modifier le fournisseur d'un produit doit retirer le produit du catalogue précédent
+    /*// TEST 31 : modifier le fournisseur d'un produit doit retirer le produit du catalogue précédent
     tests.push_back(mina.obtenirCatalogue()->obtenirConteneur().size() == 0);
     // TEST 32 : enlever un produit doit mettre l'attribut fournisseur à jour
     martine.enleverProduit(&montre);
