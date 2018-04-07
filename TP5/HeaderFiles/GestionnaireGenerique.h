@@ -46,13 +46,13 @@ C GestionnaireGenerique<T, C, A, S>::obtenirConteneur() {
 template<typename T, typename C, typename A, typename S>
 void GestionnaireGenerique<T, C, A, S>::ajouter(T* element) {
 	A foncteurAjout(conteneur_);
-	foncteurAjout(element);
+	conteneur_ = foncteurAjout(element);
 }
 
 template<typename T, typename C, typename A, typename S>
 void GestionnaireGenerique<T, C, A, S>::supprimer(T* element) {
 	S foncteurRetrait(conteneur_);
-	foncteurRetrait(element);
+	conteneur_= foncteurRetrait(element);
 }
 
 template<typename T, typename C, typename A, typename S>

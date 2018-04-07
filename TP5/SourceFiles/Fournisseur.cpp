@@ -51,6 +51,7 @@ void Fournisseur::enleverProduit(Produit *produit)
 {
 	// TODO : À modifier
 	catalogue_->supprimer(produit);
+	produit->modifierFournisseur(nullptr);
 }
 
 Produit* Fournisseur::trouverProduitPlusCher() const {
