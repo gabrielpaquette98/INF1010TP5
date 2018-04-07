@@ -91,12 +91,11 @@ vector<pair<int, Produit*>> GestionnaireProduits::obtenirProduitsEntre(double mi
 	return resultats;
 }
 
-// TODO verifier
 Produit* GestionnaireProduits::obtenirProduitSuivant(Produit* produit) const {
-	/*auto it = find_if(conteneur_.begin(),
+	auto it = find_if(conteneur_.begin(),
 		conteneur_.end(),
-		bind(greater<pair<int, Produit*>>(), make_pair(produit->obtenirReference(), produit)));
-	auto itProduitSuivant = it++;
-	return itProduitSuivant->second;*/
-	return produit; //temp
+		bind(greater<pair<int, Produit*>>(), 
+			placeholders::_1,
+			make_pair(produit->obtenirReference(), produit)));
+	return it->second;
 }
