@@ -59,5 +59,5 @@ Produit* Fournisseur::trouverProduitPlusCher() const {
 }
 
 void Fournisseur::diminuerPrix(int pourcent) {
-	//...
+	catalogue_->pourChaqueElement(FoncteurDiminuerPourcent(pourcent));
 }
