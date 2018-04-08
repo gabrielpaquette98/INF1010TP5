@@ -63,10 +63,13 @@ double GestionnaireProduits::obtenirTotalApayerPremium() const {
 
 Produit* GestionnaireProduits::trouverProduitPlusCher() const {
 	// TODO verifier
+	if (conteneur_.size() == 0) {
+		return nullptr;
+	}
 	auto it = std::max_element(
 		conteneur_.begin(),
 		conteneur_.end(),
-		[](pair<int, Produit*> premierPoduit, pair<int, Produit*> secondProduit) {
+		[](pair<int, Produit*> premierPoduit, pair<int, Produit*> secondProduit) -> bool {
 			return premierPoduit.second->obtenirPrix() < secondProduit.second->obtenirPrix();
 		}
 	);

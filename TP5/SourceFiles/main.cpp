@@ -258,12 +258,12 @@ int main()
     poly.ajouter(&martine);
 	// TEST 48 :
     tests.push_back(poly.obtenirConteneur().size() == 8);
-	/*
+	
 	// TEST 49 : trouver le produit le plus chère doit fonctionner selon les test suivants
 	tests.push_back(gaspard.trouverProduitPlusCher()->obtenirReference() == 6 &&
 					samuel.trouverProduitPlusCher()->obtenirReference() == 6 &&
 					ratus.trouverProduitPlusCher() == nullptr);
-	
+	/*
 	// TEST 50 : diminuer le prix des produits doit mettre a jour tous les produits du fournisseur
 	samuel.diminuerPrix(10);
 	//cout << samuel.obtenirCatalogue()->obtenirConteneur().find(6)->second->obtenirPrix() << endl;
@@ -275,12 +275,11 @@ int main()
 	vector<pair<int, Produit*>> intervalleProduit = julie.obtenirPanier()->obtenirProduitsEntre(20, 2000);
 	for (int i = 0; i < intervalleProduit.size(); i++) {
 		cout << "asdfljshfgkjsh" << endl;
-		intervalleProduit[i].second->afficher();
 	}
 	tests.push_back(intervalleProduit.size() == 2 &&
 		intervalleProduit[0].second->obtenirPrix() >= 20.0 &&
 		intervalleProduit[intervalleProduit.size() - 1].second->obtenirPrix() <= 2000.0);
-
+	
 	// TEST 52 : obtenir un produit avec un prix inférieur ou égal à 200
 	tests.push_back(julie.obtenirPanier()->obtenirProduitSuivant(&montre)->obtenirNom() == "nem crevettes" &&
 					julie.obtenirPanier()->obtenirProduitSuivant(&montre)->obtenirReference() > 6 &&
