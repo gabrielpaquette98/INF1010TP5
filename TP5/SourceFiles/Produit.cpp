@@ -25,6 +25,7 @@ int Produit::obtenirReference() const
 
 double Produit::obtenirPrix() const
 {
+	
     return prix_;
 }
 
