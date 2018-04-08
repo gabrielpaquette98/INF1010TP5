@@ -38,7 +38,6 @@ void Fournisseur::reinitialiser()
 
 void Fournisseur::ajouterProduit(Produit *produit)
 {
-	// TODO enlever le produit du fournisseur precedent
 	Fournisseur* fournisseurPrecedent = produit->obtenirFournisseur();
 	if (fournisseurPrecedent != nullptr) {
 		fournisseurPrecedent->obtenirCatalogue()->supprimer(produit);
