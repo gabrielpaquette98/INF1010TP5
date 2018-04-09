@@ -22,14 +22,24 @@ class GestionnaireGenerique {
 
 public:
 
-	C obtenirConteneur();
+	C obtenirConteneur() {
+		return conteneur_;
+	}
 
-	void ajouter(T* element);
+	void ajouter(T* element) {
+		A foncteurAjout(conteneur_);
+		conteneur_ = foncteurAjout(element);
+	}
 
-	void supprimer(T* element);
+	void supprimer(T* element) {
+		S foncteurRetrait(conteneur_);
+		conteneur_ = foncteurRetrait(element);
+	}
 
 	template<typename Predicate>
-	void pourChaqueElement(Predicate foncteur);
+	void pourChaqueElement(Predicate foncteur) {
+		std::for_each(conteneur_.begin(), conteneur_.end(), foncteur);
+	}
 
 protected:
 	C conteneur_;
@@ -37,26 +47,3 @@ protected:
 };
 
 #endif // !GESTIONNAIREGENERIQUE_H
-
-template<typename T, typename C, typename A, typename S>
-C GestionnaireGenerique<T, C, A, S>::obtenirConteneur() {
-	return conteneur_;
-}
-
-template<typename T, typename C, typename A, typename S>
-void GestionnaireGenerique<T, C, A, S>::ajouter(T* element) {
-	A foncteurAjout(conteneur_);
-	conteneur_ = foncteurAjout(element);
-}
-
-template<typename T, typename C, typename A, typename S>
-void GestionnaireGenerique<T, C, A, S>::supprimer(T* element) {
-	S foncteurRetrait(conteneur_);
-	conteneur_= foncteurRetrait(element);
-}
-
-template<typename T, typename C, typename A, typename S>
-template<typename Predicate>
-void GestionnaireGenerique<T, C, A, S>::pourChaqueElement(Predicate foncteur) {
-	std::for_each(conteneur_.begin(), conteneur_.end(), foncteur);
-}
